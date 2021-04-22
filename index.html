@@ -87,10 +87,13 @@
     </div>
     <section></section> 
     <h3 class="butt">PRESS ANY BUTTON</h3>
-    <audio id="myaudio" autoplay>
-        <source src="https://github.com/ipin0917826334/Multi/raw/main/rain.mp3" type="audio/mpeg">
-        </audio>
-        <script> document.getElementById('myaudio').play(); </script>
+    <audio src="https://cdn.discordapp.com/attachments/808948820289126422/834865735892860928/rain.mp3"></audio>
+    <script>
+        window.addEventListener("DOMContentLoaded", event => {
+        const audio = document.querySelector("audio");
+        audio.volume = 0.2;
+        audio.play();
+});
     </script>   
 </body>
 </html>
