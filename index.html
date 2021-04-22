@@ -87,13 +87,10 @@
     </div>
     <section></section> 
     <h3 class="butt">PRESS ANY BUTTON</h3>
-    <audio src="https://github.com/ipin0917826334/Multi/raw/main/rain.mp3"></audio>
-    <script>
-        window.addEventListener("DOMContentLoaded", event => {
-        const audio = document.querySelector("audio");
-        audio.volume = 0.2;
-        audio.play();
-});
+    <audio id="myaudio" autoplay>
+        <source src="https://github.com/ipin0917826334/Multi/raw/main/rain.mp3" type="audio/mpeg">
+        </audio>
+        <script> document.getElementById('myaudio').play(); </script>
     </script>   
 </body>
 </html>
