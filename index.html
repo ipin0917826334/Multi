@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html onkeyup="continew()" onclick="continew()">
 <head>
 <title>Omkoi Legacy</title>
 <style>
     body{
-        margin:auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
         background-image:url("https://reviewchiangmai.com/wp-content/uploads/2017/11/4.4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-        transform: scale(3,3);
+    a{
+        width: 200%;
+        height: 200%;
+        background-color: coral;
+    }
+    button{
         cursor: pointer;
     }
-    .menu{}
+    .menu{
+        display: block;
+        position: absolute;
+        text-align: center;
+    }
     h1{
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -28,9 +36,13 @@
 <body>
     <div class = 'menu'>
         <h1>Omkoi Legacy</h1>
-        <div class = 'button'>
-            <button><a href="stage.html">Click me</a></button>
-        </div>
+        <!-- <a href="stage.html"></a><button>Click me</button></a> -->
     </div>
+    <script>
+        function continew() {
+            console.log('yed kae');
+            window.location.href='stage.html';
+        }
+    </script>
 </body>
 </html>
