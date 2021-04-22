@@ -1,30 +1,44 @@
-@charset "utf-8";
-
 body{
     margin:auto;
     display: flex;
-    background-color: #5be986;
-    background-image: url("https://scontent.fbkk9-2.fna.fbcdn.net/v/t1.15752-9/173973678_381399502955322_6960930276237321587_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=yLrdo-m_ScAAX-uPT9L&_nc_ht=scontent.fbkk9-2.fna&oh=6de3787ae7e5906468b5325cd3041717&oe=60A7403E");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(255, 134, 215);
+    align-content: center;
 }
 
-fixed{
+.stage{
+    /* display: flex; */
+    top: 0;
+    left: 0;
     margin: auto;
+    width: 80%;
+    height: 75%;
+    background-color: bisque;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.fixed{
+    position: fixed;
+    transform-origin: center;
+    top: 0;
+    left: 0;
+    padding: auto;
+    background-color: bisque;
 }
 
 .assistant{
-    display: flex;
-    width: auto;
+    transform-origin: center;
+    background-color: azure;
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
 
 .assistant:hover{
-    animation: select 1000s infinite alternate-reverse;
+    /* animation: aura 1000s infinite alternate-reverse; */
 }
 
-@keyframes select{
+@keyframes aura{
     from{
         transform:scale(1,1);
     }
