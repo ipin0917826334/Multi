@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html onkeyup="continew()" onclick="continew()">
 <head>
+<script>
+    function continew() {
+        window.location.href='stage.html';
+    }
+</script>
 <title>Omkoi Legacy</title>
 <style>
+    @font-face {
+        font-family: myFirstFont;
+        src: url("https://cdn.discordapp.com/attachments/808948820289126422/834839197907025946/Dark_College.otf");
+    }
     body{
         display: flex;
         width: 100%;
@@ -28,21 +37,32 @@
     }
     h1{
         text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: myFirstFont;
         font-size: 200px;
+    }
+    .butt{
+        position: fixed;
+        bottom: 5%;
+        font-family: myFirstFont;
+        font-size: 48px;
+        color: whitesmoke;
+        animation: aura-menu 400ms infinite alternate-reverse;
+    }
+    @keyframes aura-menu{
+    from{
+        text-shadow: 0px 0px 0px;
+    }
+    to{
+        text-shadow: 0px 0px 15px yellowgreen;
+    }
     }
 </style>
 </head>
 <body>
     <div class = 'menu'>
-        <h1>Omkoi Legacy</h1>
+        <h1>OMKOI LEGACY</h1>
         <!-- <a href="stage.html"></a><button>Click me</button></a> -->
     </div>
-    <script>
-        function continew() {
-            console.log('yed kae');
-            window.location.href='stage.html';
-        }
-    </script>
+    <h3 class="butt">PRESS ANY BUTTON</h3>
 </body>
 </html>
