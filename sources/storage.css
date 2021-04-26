@@ -1,13 +1,13 @@
 body{
     margin:auto;
     display: flex;
-    background-color: rgb(255, 134, 215);
+    background-color: rgb(245, 218, 159);
     justify-content: center;
     align-content: center;
 }
 
-img#action{
-    /* background-color: greenyellow; //show area item*/
+#action{
+    /* background-color: greenyellow; //show area item */
     transition: 1s;
 }
 
@@ -18,89 +18,63 @@ img#action{
     margin: auto;
     width: 100%;
     height: 100%;
-    background-color: bisque;
     /* align-items: center;
     justify-content: center; */
 }
 
 .fixed{
+    margin: auto;
     position: absolute;
     transform-origin: center;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    padding: auto;
-    background-color: bisque;
+    height: auto;
 }
 
 .assistant{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 11.5%;
+    height: auto;
     position: absolute;
-    top: 30%;
-    left: 60%;
-}
-
-.bin{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    top: 34%;
+    left: 59.5%;
 }
 
 .book{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 7%;
+    height: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 37%;
+    left: 46.75%;
 }
 
 .clock{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 5.75%;
+    height: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 14.75%;
+    left: 38%;
 }
 
 .phone{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 3%;
+    height: auto;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 51.5%;
+    left: 55%;
 }
 
 .table{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 15%;
+    height: auto;
     position: absolute;
-    top: 35%;
+    top: 36.5%;
     left: 26%;
 }
 
 .tv{
-    margin-right: 14px;
-    display: block;
-    float: left;
-    transform-origin: center;
+    width: 10%;
+    height: auto;
     position: absolute;
-    top: 18%;
+    top: 18.5%;
     left: 26%;
 }
 
