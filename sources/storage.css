@@ -6,6 +6,11 @@ body{
     align-content: center;
 }
 
+img#action{
+    /* background-color: greenyellow; //show area item*/
+    transition: 1s;
+}
+
 .stage{
     /* display: flex; */
     top: 0;
@@ -37,9 +42,68 @@ body{
     position: absolute;
     top: 30%;
     left: 60%;
-    transition: all 500ms;
 }
 
-.assistant:hover{
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+.bin{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.book{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clock{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.phone{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.table{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 35%;
+    left: 26%;
+}
+
+.tv{
+    margin-right: 14px;
+    display: block;
+    float: left;
+    transform-origin: center;
+    position: absolute;
+    top: 18%;
+    left: 26%;
+}
+
+#action:hover{
+    transform: scale(1.2, 1.2);
 }
