@@ -2,6 +2,7 @@ body{
     margin:auto;
     display: flex;
     background-color: rgb(255, 134, 215);
+    justify-content: center;
     align-content: center;
 }
 
@@ -32,18 +33,10 @@ body{
     transform-origin: center;
     position: absolute;
     top: 35%;
-    left:60%;
+    left: 58%;
+    transition: all 500ms;
 }
 
 .assistant:hover{
-    animation: aura 1000s infinite alternate-reverse;
-}
-
-@keyframes aura{
-    from{
-        transform:scale(1,1);
-    }
-    to{
-        transform:scale(1.5,1.5);
-    }
+    transform:scale(1.2,1.2);
 }
