@@ -8,7 +8,7 @@ body{
 
 #action{
     /* background-color: greenyellow; //show area item */
-    transition: 1s;
+    transition: 250ms;
 }
 
 .stage{
@@ -58,8 +58,8 @@ body{
     width: 3%;
     height: auto;
     position: absolute;
-    top: 51.5%;
-    left: 55%;
+    top: 51.25%;
+    left: 55.25%;
 }
 
 .table{
@@ -79,5 +79,5 @@ body{
 }
 
 #action:hover{
-    transform: scale(1.2, 1.2);
+    transform: scale(1.15, 1.15);
 }
