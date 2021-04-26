@@ -28,17 +28,59 @@ body{
     background-color: bisque;
 }
 
-.assistant{
+.tv{
+    background-color: ;
     transform-origin: center;
     position: absolute;
+    height: auto;
+    width: auto;
+    top: 25%;
+    left:29%;
+    margin: auto;
+    transition: 2s;
+}
+
+.file{
+    background-color: ;
+    transform-origin: center;
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 40%;
+    left:47%;
+    margin: auto;
+    transition: 2s;
+}
+
+.assistant{
+    background-color: ;
+    transform-origin: center;
+    position: absolute;
+    height: auto;
+    width: auto;
     top: 35%;
-    left:60%;
+    left:57%;
+    margin: auto;
+    transition: 2s;
 }
 
 .assistant:hover{
     animation: aura 1000s infinite alternate-reverse;
+    /* box-shadow: 1px 1px 200px hsl(180, 99%, 50%); */
+    /* box-shadow: 1px 1px 600px hsl(120, 100%, 50%); */
 }
 
+.tv:hover{
+    animation: aura 1000s infinite alternate-reverse;
+    /* box-shadow: 1px 1px 200px hsl(180, 99%, 50%); */
+    /* box-shadow: 1px 1px 600px hsl(120, 100%, 50%); */
+}
+
+.file:hover{
+    animation: aura 1000s infinite alternate-reverse;
+    /* box-shadow: 1px 1px 200px hsl(180, 99%, 50%); */
+    /* box-shadow: 1px 1px 600px hsl(120, 100%, 50%); */
+}
 @keyframes aura{
     from{
         transform:scale(1,1);
