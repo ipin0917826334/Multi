@@ -1,170 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html onkeyup="continew()" onclick="continew()">
 <head>
-  <meta charset="UTF-8">
-  <title>Loading</title>
-  <style>
-    body {
-      background-image: url("https://reviewchiangmai.com/wp-content/uploads/2017/11/4.4.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-
-    #loading-wrapper {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-
-    #loading-text {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: rgb(44, 39, 39);
-      width: 100px;
-      height: 30px;
-      margin: -7px 0 0 -45px;
-      text-align: center;
-      font-family: 'PT Sans Narrow', sans-serif;
-      font-size: 20px;
-    }
-
-    #loading-content {
-      display: block;
-      position: relative;
-      left: 50%;
-      top: 50%;
-      width: 170px;
-      height: 170px;
-      margin: -85px 0 0 -85px;
-      border: 3px solid #F00;
-    }
-
-    #loading-content:after {
-      content: "";
-      position: absolute;
-      border: 3px solid #0F0;
-      left: 15px;
-      right: 15px;
-      top: 15px;
-      bottom: 15px;
-    }
-
-    #loading-content:before {
-      content: "";
-      position: absolute;
-      border: 3px solid #00F;
-      left: 5px;
-      right: 5px;
-      top: 5px;
-      bottom: 5px;
-    }
-
-    #loading-content {
-      border: 3px solid transparent;
-      border-top-color: #4D658D;
-      border-bottom-color: #4D658D;
-      border-radius: 50%;
-      -webkit-animation: loader 2s linear infinite;
-      -moz-animation: loader 2s linear infinite;
-      -o-animation: loader 2s linear infinite;
-      animation: loader 2s linear infinite;
-    }
-
-    #loading-content:before {
-      border: 3px solid transparent;
-      border-top-color: #D4CC6A;
-      border-bottom-color: #D4CC6A;
-      border-radius: 50%;
-      -webkit-animation: loader 3s linear infinite;
-      -moz-animation: loader 2s linear infinite;
-      -o-animation: loader 2s linear infinite;
-      animation: loader 3s linear infinite;
-    }
-
-    #loading-content:after {
-      border: 3px solid transparent;
-      border-top-color: #84417C;
-      border-bottom-color: #84417C;
-      border-radius: 50%;
-      -webkit-animation: loader 1.5s linear infinite;
-      animation: loader 1.5s linear infinite;
-      -moz-animation: loader 2s linear infinite;
-      -o-animation: loader 2s linear infinite;
-    }
-
-    @-webkit-keyframes loaders {
-      0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes loader {
-      0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-
-    #content-wrapper {
-      color: #FFF;
-      position: fixed;
-      left: 0;
-      top: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    #header {
-      width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      height: 100px;
-      background-color: #666;
-    }
-
-    #content {
-      width: 800px;
-      height: 1000px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: #888;
-    }
-  </style>
-
-</head>
-
-<body>
-  <div id="loading-wrapper">
-    <div id="loading-text">LOADING</div>
-    <div id="loading-content"></div>
-  </div>
-
-</body>
 <script>
-  window.onload = setTimeout(() => {
-    window.location.replace("menu.html")
-  }, 8000)
+    function continew() {
+        window.location.href='sources/loading.html';
+    }
 </script>
+<title>Omkoi Legacy</title>
+<style>
+    @font-face {
+        font-family: myFirstFont;
+        font-weight: normal;
+        font-style: normal;
+        src: url("sources/DarkCollege.otf");
+    }
+    body{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        background-image:url("https://reviewchiangmai.com/wp-content/uploads/2017/11/4.4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    a{
+        width: 200%;
+        height: 200%;
+        background-color: coral;
+    }
+    button{
+        cursor: pointer;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-family: myFirstFont;
+        font-size: 200px;
+    }
+    .butt{
+        position: fixed;
+        bottom: 5%;
+        font-family: myFirstFont;
+        font-size: 48px;
+        color: whitesmoke;
+        animation: aura-menu 400ms infinite alternate-reverse;
+    }
+    section { 
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
+    animation: rain 0.4s linear infinite; 
+    opacity: 0; 
+    }
+    @keyframes aura-menu{
+    from{
+        text-shadow: 0px 0px 0px;
+    }
+    to{
+        text-shadow: 0px 0px 15px yellowgreen;
+    }
+    }
+    @keyframes rain { 
+    0% { 
+        background-position: 0 0; 
+        opacity: 1; 
+    } 
 
+    100% { 
+        background-position: 10% 100%; 
+        opacity: 1; 
+    } 
+}
+</style>
+</head>
+<body>
+    <div class = 'menu'>
+        <h1>OMKOI LEGACY</h1>
+        <!-- <a href="stage.html"></a><button>Click me</button></a> -->
+    </div>
+    <section></section> 
+    <h3 class="butt">PRESS ANY BUTTON</h3>
+    <audio src="sources/rain.mp3"></audio>
+    <script>
+        window.addEventListener("DOMContentLoaded", event => {
+        const audio = document.querySelector("audio");
+        audio.volume = 0.2;
+        audio.play();
+});
+    </script>   
+</body>
 </html>
