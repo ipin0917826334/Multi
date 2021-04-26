@@ -30,13 +30,16 @@ body{
 }
 
 .assistant{
+    margin-right: 14px;
+    display: block;
+    float: left;
     transform-origin: center;
     position: absolute;
-    top: 35%;
-    left: 58%;
+    top: 30%;
+    left: 60%;
     transition: all 500ms;
 }
 
 .assistant:hover{
-    transform:scale(1.2,1.2);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
