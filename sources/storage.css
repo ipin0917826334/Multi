@@ -82,3 +82,65 @@ body{
     cursor: pointer;
     transform: scale(1.15, 1.15);
 }
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+    background-color: aqua;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    z-index: 99;
+}
+.box {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 50px 15px;
+    background-color: #ced7ef;
+    vertical-align: middle;
+    border-radius: 2em;
+    box-shadow: 20px 10px;
+  }
+.item-1{
+	animation-name: anim-1;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+.item-2{
+	animation-name: anim-2;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+.item-3{
+	animation-name: anim-3;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
