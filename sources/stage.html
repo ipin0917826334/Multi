@@ -13,13 +13,13 @@
 </head>
 <script type="text/javascript">
     $(window).on('load', function () {
-        $('#myModal01').modal('show');
+        $('#myModal').modal('show');
     });
 </script>
 </head>
 
 <body>
-    <div class="modal fade" id="myModal01" role="dialog">
+    <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -34,6 +34,25 @@
                         ของเรา จะมีวัตถุที่สามารถกดได้ highlight เอาไว้ ของที่ highlight
                         ไว้แต่ละอย่างจะเป็นตัวช่วยในการตัดสินใจของเราว่าจะทำเหมืองถ่านหินหรือไม่
                     </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal01" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">บอส</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h1>แก้ข้อความให้หน่อย</h1>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -171,30 +190,44 @@
 
         </div>
     </div>
-    <div class='stage'>
-        <div class='fixed'>
-            <img src="item_picture/State.png" width="100%">
-            <div id='action' class='assistant' onclick="javascript:showMyModalSetTitle2('', '')">
+    <div class='interface'>
+        <div class='help'>
+            <h1>?</h1>
+        </div>
+        <div class='stage'>
+            <img src="item_picture/newState.png" width="100%">
+            <div id='action1' class='president' onclick="javascript:showMyModalSetTitle1('', '')">
+                <img src="item_picture/President.png" width="100%">
+            </div>
+            <div id='action2' class='assistant' onclick="javascript:showMyModalSetTitle2('', '')">
                 <img src="item_picture/Assistant.png" width="100%">
             </div>
-            <div id='action1' class='clock' onclick="javascript:showMyModalSetTitle3('', '')">
+            <div id='action3' class='clock' onclick="javascript:showMyModalSetTitle3('', '')">
                 <img src="item_picture/Clock.png" width="100%">
             </div>
-            <div id='action2' class='book' onclick="javascript:showMyModalSetTitle4('', '')">
+            <div id='action4' class='book' onclick="javascript:showMyModalSetTitle4('', '')">
                 <img src="item_picture/Book.png" width="100%">
             </div>
-            <div id='action3' class='phone' onclick="javascript:showMyModalSetTitle5('', '')">
+            <div id='action5' class='phone' onclick="javascript:showMyModalSetTitle5('', '')">
                 <img src="item_picture/Phone.png" width="100%">
             </div>
-            <div id='action4' class='table' onclick="javascript:showMyModalSetTitle6('', '')">
+            <div id='action6' class='table' onclick="javascript:showMyModalSetTitle6('', '')">
                 <img src="item_picture/Table.png" width="100%">
             </div>
-            <div id='action5' class='tv' onclick="javascript:showMyModalSetTitle7('', '')">
+            <div id='action7' class='tv' onclick="javascript:showMyModalSetTitle7('', '')">
                 <img src="item_picture/TV.png" width="100%">
+            </div>
+            <div class='chair'>
+                <img src="item_picture/Chair.png" width="100%">
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript"> function showMyModalSetTitle1(myTitle, myBodyHtml) {
+        $('#myModalTitle').html(myTitle);
+        $('#myModalBody').html(myBodyHtml);
+        $('#myModal01').modal('show');
+    }</script>
 <script type="text/javascript"> function showMyModalSetTitle2(myTitle, myBodyHtml) {
         $('#myModalTitle').html(myTitle);
         $('#myModalBody').html(myBodyHtml);
@@ -225,5 +258,4 @@
         $('#myModalBody').html(myBodyHtml);
         $('#myModal07').modal('show');
     }</script>
-
 </html>
