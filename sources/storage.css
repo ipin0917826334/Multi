@@ -1,64 +1,91 @@
 body{
     margin:auto;
     display: flex;
-    background-color: rgb(245, 218, 159);
+    background-color: rgb(253, 228, 174);
     justify-content: center;
     align-content: center;
 }
 
-#action:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Assistant_h.png")
-}
-
 #action1:hover{
     /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Clock_h.png")
+    content: url("item_picture/President_h.png")
 }
 
 #action2:hover{
     /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Book_h.png")
+    content: url("item_picture/Assistant_h.png")
 }
 
 #action3:hover{
     /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Phone_h.png")
+    content: url("item_picture/Clock_h.png")
 }
 
 #action4:hover{
     /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Book_h.png")
+}
+
+#action5:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Phone_h.png")
+}
+
+#action6:hover{
+    /* background-color: greenyellow; //show area item */
     content: url("item_picture/Table_h.png")
 }
-#action5:hover{
+#action7:hover{
     /* background-color: greenyellow; //show area item */
     content: url("item_picture/TV_h.png")
 }
-.stage{
-    top: 0;
-    left: 0;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
-.fixed{
+.interface{
+    display: flex;
     margin: auto;
-    position: fixed;
-    transform-origin: center;
-    width: 110%;
-    height: auto;
+    width: 90%;
+    height: 95%;
     top: 50%;
     left: 50%;
+    justify-content: center;
+    align-content: center;
+    transform-origin: center;
+    background-color: rgb(224, 200, 147);
+    border: 5px solid rgb(75, 74, 74);
+    border-radius: 1em;
+    box-shadow: inset 0px 0px 30px rgb(180, 161, 119);
     transform: translate(-50%, -50%);
+    position: fixed;
 }
+
+.help{
+    width: 5%;
+    height: 7%;
+    text-align: center;
+    background-color: honeydew;
+    border: 2.5px solid black;
+    border-radius: 100%;
+    transform: translate(80px, 60px);
+}
+
+.stage{
+    position: relative;
+}
+
+.president{
+    width: 18.5%;
+    height: auto;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+}
+
 .assistant{
     width: 9.5%;
     height: auto;
     position: absolute;
     top: 32%;
-    left: 58%;
+    left: 60%;
 }
 
 .book{
@@ -67,6 +94,14 @@ body{
     position: absolute;
     top: 36.5%;
     left: 46.75%;
+}
+
+.chair{
+    width: 12.5%;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 40%;
 }
 
 .clock{
@@ -81,8 +116,8 @@ body{
     width: 3%;
     height: auto;
     position: absolute;
-    top: 48.25%;
-    left: 55.25%;
+    top: 50.5%;
+    left: 55.5%;
 }
 
 .table{
@@ -101,10 +136,11 @@ body{
     left: 26%;
 }
 
-#action:hover{
+.fix:hover{
     cursor: pointer;
     transform: scale(1.15, 1.15);
 }
+
 .item-1, 
 .item-2, 
 .item-3 {
