@@ -6,11 +6,34 @@ body{
     align-content: center;
 }
 
-#action{
+#action:hover{
     /* background-color: greenyellow; //show area item */
-    transition: 250ms;
+    content: url("item_picture/Assistant_h.png")
 }
 
+#action1:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Clock_h.png")
+}
+
+#action2:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Book_h.png")
+}
+
+#action3:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Phone_h.png")
+}
+
+#action4:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/Table_h.png")
+}
+#action5:hover{
+    /* background-color: greenyellow; //show area item */
+    content: url("item_picture/TV_h.png")
+}
 .stage{
     top: 0;
     left: 0;
@@ -24,18 +47,18 @@ body{
     margin: auto;
     position: fixed;
     transform-origin: center;
-    width: 100%;
+    width: 110%;
     height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .assistant{
-    width: 11.5%;
+    width: 9.5%;
     height: auto;
     position: absolute;
-    top: 34%;
-    left: 59.5%;
+    top: 32%;
+    left: 58%;
 }
 
 .book{
@@ -86,13 +109,10 @@ body{
 .item-2, 
 .item-3 {
 	position: absolute;
-  display: block;
+    display: block;
 	top: 2em;
-  
-  width: 60%;
-  
-  font-size: 2em;
-    background-color: aqua;
+    width: 60%;
+    font-size: 2em;
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
