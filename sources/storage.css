@@ -6,40 +6,6 @@ body{
     align-content: center;
 }
 
-#action1:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/President_h.png")
-}
-
-#action2:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Assistant_h.png")
-}
-
-#action3:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Clock_h.png")
-}
-
-#action4:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Book_h.png")
-}
-
-#action5:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Phone_h.png")
-}
-
-#action6:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/Table_h.png")
-}
-#action7:hover{
-    /* background-color: greenyellow; //show area item */
-    content: url("item_picture/TV_h.png")
-}
-
 .interface{
     display: flex;
     margin: auto;
@@ -139,6 +105,14 @@ body{
 .fix:hover{
     cursor: pointer;
     transform: scale(1.15, 1.15);
+}
+
+
+.test{
+    transition: all 0.5s;
+}
+.test:hover{
+    filter: drop-shadow(0px 0px 20px rgb(188, 190, 12));
 }
 
 .item-1, 
