@@ -191,16 +191,16 @@
         </div>
     </div>
     <div class='interface'>
-        <div class='help'>
-            <h1>?</h1>
-        </div>
         <div class='cutscene'>
             <div class='text'>
                 Chapter 1
             </div>
         </div>
         <div class='stage'>
-            <img src="item_picture/newState.png" width="100%">
+            <div class='help'>
+                <h1>?</h1>
+            </div>
+            <img src="item_picture/newState.png" id='state1'>
             <div class='president' onclick="javascript:showMyModalSetTitle1('', '')">
                 <img class='test' src="item_picture/President.png" width="100%">
             </div>
@@ -222,10 +222,43 @@
             <div class='tv' onclick="javascript:showMyModalSetTitle7('', '')">
                 <img class='test' src="item_picture/TV.png" width="100%">
             </div>
-            <div class='chair'>
+            <div class='chair' onclick="javascript:showMyModalSetTitle8('', '')">
                 <img class='test' src="item_picture/Chair.png" width="100%">
             </div>
         </div>
+    </div>
+    <div class="modal fade" id="myModal08" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+                <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-3 col-xs-offset-5">
+                   <div id="loadbar" style="display: none;">
+                      <div class="blockG" id="rotateG_01"></div>
+                      <div class="blockG" id="rotateG_02"></div>
+                      <div class="blockG" id="rotateG_03"></div>
+                      <div class="blockG" id="rotateG_04"></div>
+                      <div class="blockG" id="rotateG_05"></div>
+                      <div class="blockG" id="rotateG_06"></div>
+                      <div class="blockG" id="rotateG_07"></div>
+                      <div class="blockG" id="rotateG_08"></div>
+                  </div>
+              </div>
+    
+              <div class="quiz" id="quiz" data-toggle="buttons">
+               <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+               <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+               <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">3 Three</label>
+               <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+           </div>
+       </div>
+       <div class="modal-footer text-muted">
+        <span id="answer"></span>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
 <script type="text/javascript"> function showMyModalSetTitle1(myTitle, myBodyHtml) {
@@ -262,5 +295,40 @@
         $('#myModalTitle').html(myTitle);
         $('#myModalBody').html(myBodyHtml);
         $('#myModal07').modal('show');
+    }</script>
+    <script type="text/javascript"> function showMyModalSetTitle8(myTitle, myBodyHtml) {
+        $('#myModalTitle').html(myTitle);
+        $('#myModalBody').html(myBodyHtml);
+        $('#myModal08').modal('show');
+        $(function(){
+    var loading = $('#loadbar').hide();
+    $(document)
+    .ajaxStart(function () {
+        loading.show();
+    }).ajaxStop(function () {
+    	loading.hide();
+    });
+    
+    $("label.btn").on('click',function () {
+    	var choice = $(this).find('input:radio').val();
+    	$('#loadbar').show();
+    	$('#quiz').fadeOut();
+    	setTimeout(function(){
+           $( "#answer" ).html(  $(this).checking(choice) );      
+            $('#quiz').show();
+            $('#loadbar').fadeOut();
+           /* something else */
+    	}, 1500);
+    });
+
+    $ans = 3;
+
+    $.fn.checking = function(ck) {
+        if (ck != $ans)
+            return 'INCORRECT';
+        else 
+            return 'CORRECT';
+    }; 
+});	
     }</script>
 </html>
