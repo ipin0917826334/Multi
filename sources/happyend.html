@@ -5,6 +5,7 @@
     <title>Omkoi Legacy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="20;URL=https://omkoithestory.netlify.app">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="storage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -32,6 +33,26 @@
     </h1>
     <h1 class="box item-3">“ขอบคุณที่ทําให้เรามีชีวิตที่สงบสุขอีกครั้ง -จากชาวอมก๋อย”
     </h1>
+    <h1 class="endtxt">กุเหนื่อย</h1>
+    <script type="text/javascript">
+        var url = "https://omkoithestory.netlify.app";
+        var delay = "20000";
+        window.onload = function ()
+        {
+            setTimeout(GoToURL, delay);
+        }
+        function GoToURL()
+        {
+            if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
+            {
+                var referLink = document.createElement("a");
+                referLink.href = url;
+                document.body.appendChild(referLink);
+                referLink.click();
+            }
+            else { window.location.replace(url); } // All other browsers
+        }
+    </script>
 </body>
 
 </html>
