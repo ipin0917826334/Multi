@@ -73,7 +73,8 @@ body{
     font-size: 7vw;
     font-weight: bold;
     transform: translate(-50%, -50%);
-    animation: aura-menu 400ms infinite alternate-reverse;
+    animation: aura-menu 400ms infinite alternate-reverse,
+    fadere 4s 18s backwards;
 }
 .president{
     background-image: url('item_picture/President.png');
@@ -226,6 +227,14 @@ body{
     0%{ opacity: 100%;}
     99%{ opacity: 0%; z-index: 1;}
     100%{ opacity: 0%; z-index: -1;}
+}
+@keyframes fadere {
+    0%{ opacity: 0%;}
+    25%{ opacity: 15%;}
+    50%{ opacity: 50%;}
+    75%{ opacity: 75%;}
+    99%{ opacity: 100%; z-index: 1;}
+    100%{ opacity: 100%; z-index: -1;}
 }
 #qid {
     padding: 10px 15px;
