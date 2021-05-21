@@ -11,15 +11,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(window).on('load', function () {
         $('#myModal').modal('show');
     });
-</script>
+</script> -->
 </head>
 
 <body>
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal00" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -197,11 +197,9 @@
             </div>
         </div>
         <div class='stage'>
-            <div class='help'>
-                <h1>?</h1>
-            </div>
-            <img src="item_picture/newState.png" id='state1'>
-            <div class='president' onclick="javascript:showMyModalSetTitle1('', '')">
+            <button class="help" onclick="javascript:showMyModalSetTitle0('', '')">?
+            </button>
+            <div class='president test' onclick="javascript:showMyModalSetTitle1('', '')">
                 <img class='test' src="item_picture/President.png" width="100%">
             </div>
             <div class='assistant' onclick="javascript:showMyModalSetTitle2('', '')">
@@ -261,6 +259,11 @@
     </div>
     </div>
 </body>
+<script type="text/javascript"> function showMyModalSetTitle0(myTitle, myBodyHtml) {
+        $('#myModalTitle').html(myTitle);
+        $('#myModalBody').html(myBodyHtml);
+        $('#myModal00').modal('show');
+    }</script>
 <script type="text/javascript"> function showMyModalSetTitle1(myTitle, myBodyHtml) {
         $('#myModalTitle').html(myTitle);
         $('#myModalBody').html(myBodyHtml);
