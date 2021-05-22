@@ -84,59 +84,59 @@ body{
 }
 
 .president{
-    width: 30%;
-    position: absolute;
-    top: 38vh;
-    left: 40vw;
+    width: 17vw;
+    position: fixed;
+    top: 27vh;
+    left: 39vw;
 }
 
 .assistant{
-    width: 10vw;
-    position: absolute;
-    top: 42vh;
-    left: 55vw;
+    width: 9vw;
+    position: fixed;
+    top: 26.5vh;
+    left: 53.75vw;
 }
 
 .book{
-    width: 7vw;
-    position: absolute;
-    top: 46.5vh;
-    left: 41.75vw;
+    width: 6.5vw;
+    position: fixed;
+    top: 35vh;
+    left: 40.5vw;
 }
 
 .chair{
-    width: 10vw;
-    position: absolute;
-    top: 55vh;
-    left: 35vw;
+    width: 12vw;
+    position: fixed;
+    top: 43vh;
+    left: 33vw;
 }
 
 .clock{
-    width: 5vw;
-    position: absolute;
-    top: 23vh;
-    left: 35vw;
+    width: 5.5vw;
+    position: fixed;
+    top: 11vh;
+    left: 34.5vw;
 }
 
 .phone{
-    width: 7.5vw;
-    position: absolute;
-    top: 60.5vh;
-    left: 50.5vw;
+    width: 3vw;
+    position: fixed;
+    top: 49vh;
+    left: 48.5vw;
 }
 
 .table{
-    width: 15vw;
-    position: absolute;
-    top: 46.5vh;
-    left: 21vw;
+    width: 14.5vw;
+    position: fixed;
+    top: 36.5vh;
+    left: 19vw;
 }
 
 .tv{
-    width: 10vw;
-    position: absolute;
-    top: 28.5vh;
-    left: 21vw;
+    width: 11vw;
+    position: fixed;
+    top: 19.5vh;
+    left: 18vw;
 }
 
 .fix:hover{
