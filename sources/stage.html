@@ -267,6 +267,7 @@
     <audio id="audio6" src="ef6.mp3"></audio>
     <audio id="audio7" src="ef7.mp3"></audio>
     <audio id="audio8" src="ef8.mp3"></audio>
+    <audio id="state_sound" src="state_sound.mp3"></audio>
 </body>
 <script type="text/javascript"> function showMyModalSetTitle0(myTitle, myBodyHtml) {
         $('#myModalTitle').html(myTitle);
@@ -415,4 +416,11 @@
         sound.play();
     }
 </script>
+<script>
+    window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.getElementById("state_sound");
+    audio.volume = 0.125;
+    audio.play();
+});
+</script> 
 </html>
