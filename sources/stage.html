@@ -11,16 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<script type="text/javascript">
-    $(window).on('load', function () {
-        var sound = document.getElementById("state_sound");
-        sound.volume = 0.1;
-        sound.play();
-    });
-</script>
-</head>
-
-<body>
+<body onload="playSound9()">
     <div class="modal fade" id="myModal00" role="dialog">
         <div class="modal-dialog">
 
@@ -35,6 +26,9 @@
                         อำเภออมก๋อยร่วมกับนายทุนคนอื่นหรือไม่ ภายในระยะเวลา 1 ชม. เรื่องทั้งหมดจะเกิดขึ้นภายใน office
                         ของเรา จะมีวัตถุที่สามารถกดได้ highlight เอาไว้ ของที่ highlight
                         ไว้แต่ละอย่างจะเป็นตัวช่วยในการตัดสินใจของเราว่าจะทำเหมืองถ่านหินหรือไม่
+                    </p>
+                    <p>
+                        ถ้าchromeไมีมีเสียงให้เข้าไปที่ <b>chrome://settings/content/sound</b>แล้ว Allow <b>https://omkoithestory.netlify.app/sources/stage.html</b>
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -418,11 +412,11 @@
         sound.play();
     }
 </script>
-<script>
-    window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.getElementById("state_sound");
-    audio.volume = 0.125;
-    audio.play();
-});
-</script> 
+<script type="text/javascript">
+    function playSound9() {
+    var sound = document.getElementById("state_sound");
+    sound.volume = 0.125;
+    sound.play();
+}
+</script>
 </html>
