@@ -11,11 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     $(window).on('load', function () {
-        $('#myModal').modal('show');
+        var sound = document.getElementById("state_sound");
+        sound.volume = 0.1;
+        sound.play();
     });
-</script> -->
+</script>
 </head>
 
 <body>
@@ -258,16 +260,16 @@
     </div>
     </div>
     </div>
-    <audio id="audio" src="ef0.mp3"></audio>
-    <audio id="audio1" src="ef1.mp3"></audio>
-    <audio id="audio2" src="ef2.mp3"></audio>
-    <audio id="audio3" src="ef3.mp3"></audio>
-    <audio id="audio4" src="ef4.mp3"></audio>
-    <audio id="audio5" src="ef5.mp3"></audio>
-    <audio id="audio6" src="ef6.mp3"></audio>
-    <audio id="audio7" src="ef7.mp3"></audio>
-    <audio id="audio8" src="ef8.mp3"></audio>
-    <audio id="state_sound" src="state_sound.mp3"></audio>
+    <audio preload="auto" id="audio" src="ef0.mp3"></audio>
+    <audio preload="auto" id="audio1" src="ef1.mp3"></audio>
+    <audio preload="auto" id="audio2" src="ef2.mp3"></audio>
+    <audio preload="auto" id="audio3" src="ef3.mp3"></audio>
+    <audio preload="auto" id="audio4" src="ef4.mp3"></audio>
+    <audio preload="auto" id="audio5" src="ef5.mp3"></audio>
+    <audio preload="auto" id="audio6" src="ef6.mp3"></audio>
+    <audio preload="auto" id="audio7" src="ef7.mp3"></audio>
+    <audio preload="auto" id="audio8" src="ef8.mp3"></audio>
+    <audio preload="auto" id="state_sound" src="state_sound.mp3"></audio>
 </body>
 <script type="text/javascript"> function showMyModalSetTitle0(myTitle, myBodyHtml) {
         $('#myModalTitle').html(myTitle);
