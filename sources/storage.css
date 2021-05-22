@@ -139,6 +139,106 @@ body{
     left: 18vw;
 }
 
+@media screen and (max-width: 992px){
+    .president{
+        width: 17vw;
+        top: 27vh;
+        left: 39vw;
+    }
+    
+    .assistant{
+        width: 9vw;
+        top: 26.5vh;
+        left: 53.75vw;
+    }
+    
+    .book{
+        width: 6.5vw;
+        top: 35vh;
+        left: 40.5vw;
+    }
+    
+    .chair{
+        width: 12vw;
+        top: 43vh;
+        left: 33vw;
+    }
+    
+    .clock{
+        width: 5.5vw;
+        top: 11vh;
+        left: 34.5vw;
+    }
+    
+    .phone{
+        width: 3vw;
+        top: 49vh;
+        left: 48.5vw;
+    }
+    
+    .table{
+        width: 14.5vw;
+        top: 36.5vh;
+        left: 19vw;
+    }
+    
+    .tv{
+        width: 11vw;
+        top: 19.5vh;
+        left: 18vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .president{
+        width: 17vw;
+        top: 27vh;
+        left: 39vw;
+    }
+    
+    .assistant{
+        width: 9vw;
+        top: 26.5vh;
+        left: 53.75vw;
+    }
+    
+    .book{
+        width: 6.5vw;
+        top: 35vh;
+        left: 40.5vw;
+    }
+    
+    .chair{
+        width: 12vw;
+        top: 43vh;
+        left: 33vw;
+    }
+    
+    .clock{
+        width: 5.5vw;
+        top: 11vh;
+        left: 34.5vw;
+    }
+    
+    .phone{
+        width: 3vw;
+        top: 49vh;
+        left: 48.5vw;
+    }
+    
+    .table{
+        width: 14.5vw;
+        top: 36.5vh;
+        left: 19vw;
+    }
+    
+    .tv{
+        width: 11vw;
+        top: 19.5vh;
+        left: 18vw;
+    }
+}
+
 .fix:hover{
     cursor: pointer;
     transform: scale(1.15, 1.15);
