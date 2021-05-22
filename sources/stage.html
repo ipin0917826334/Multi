@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body onload="playSound9()">
+<body>
     <div class="modal fade" id="myModal00" role="dialog">
         <div class="modal-dialog">
 
@@ -412,11 +412,11 @@
         sound.play();
     }
 </script>
-<script type="text/javascript">
-    function playSound9() {
-    var sound = document.getElementById("state_sound");
-    sound.volume = 0.125;
-    sound.play();
-}
-</script>
+<script>
+    window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.getElementById("state_sound");
+    audio.volume = 0.2;
+    audio.play();
+});
+</script>   
 </html>
