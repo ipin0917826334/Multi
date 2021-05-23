@@ -160,7 +160,7 @@ body{
     
     .book{
         width: 12vw;
-        top: 36.5vh;
+        top: 36vh;
         left: 40vw;
     }
     
@@ -178,7 +178,7 @@ body{
     
     .phone{
         width: 5vw;
-        top: 53%;
+        top: 49%;
         left: 57vw;
     }
     
@@ -195,53 +195,66 @@ body{
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
+    .stage{
+        top: -10vh;
+        height: 60vh;
+    }
+    .help{
+        top: -15vh;
+    }
     .president{
-        width: 17vw;
-        top: 27vh;
-        left: 39vw;
+        width: 35%;
+        top: 32%;
+        left: 38vw;
     }
     
     .assistant{
-        width: 9vw;
-        top: 26.5vh;
-        left: 53.75vw;
+        width: 21%;
+        top: 30%;
+        left: 63vw;
     }
     
     .book{
-        width: 6.5vw;
-        top: 35vh;
+        width: 14%;
+        top: 39%;
         left: 40.5vw;
     }
     
     .chair{
-        width: 12vw;
-        top: 43vh;
-        left: 33vw;
+        width: 25%;
+        top: 46%;
+        left: 27.5vw;
     }
     
     .clock{
-        width: 5.5vw;
-        top: 11vh;
-        left: 34.5vw;
+        width: 12.5%;
+        top: 11%;
+        left: 25.5vw;
     }
     
     .phone{
-        width: 3vw;
-        top: 49vh;
-        left: 48.5vw;
+        width: 7%;
+        top: 27.5vh;
+        left: 55vw;
     }
     
     .table{
-        width: 14.5vw;
-        top: 36.5vh;
-        left: 19vw;
+        width: 32%;
+        top: 40%;
+        left: 0;
     }
     
     .tv{
-        width: 11vw;
-        top: 19.5vh;
-        left: 18vw;
+        width: 26%;
+        top: 16%;
+        left: 0;
+    }
+}
+
+@media screen and (max-height: 736px){
+    .phone{
+        top: 49%;
     }
 }
 
