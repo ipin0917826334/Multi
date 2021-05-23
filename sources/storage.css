@@ -146,27 +146,27 @@ body{
 
 @media screen and (max-width: 1024px){
     .president{
-        width: 37vw;
-        top: 32vh;
-        left: 35vw;
+        width: 35vw;
+        top: 28vh;
+        left: 37vw;
     }
     
     .assistant{
-        width: 20vw;
+        width: 18vw;
         top: 31vh;
-        left: 67vw;
+        left: 65vw;
     }
     
     .book{
-        width: 13vw;
-        top: 39vh;
-        left: 39.5vw;
+        width: 12vw;
+        top: 36.5vh;
+        left: 40vw;
     }
     
     .chair{
-        width: 26vw;
-        top: 45vh;
-        left: 22vw;
+        width: 24vw;
+        top: 43vh;
+        left: 26vw;
     }
     
     .clock{
@@ -177,8 +177,8 @@ body{
     
     .phone{
         width: 6.5vw;
-        top: 50.5vh;
-        left: 56vw;
+        top: 48.5vh;
+        left: 57vw;
     }
     
     .table{
