@@ -148,25 +148,25 @@ body{
     .president{
         width: 37vw;
         top: 32vh;
-        left: 39vw;
+        left: 35vw;
     }
     
     .assistant{
         width: 20vw;
         top: 31vh;
-        left: 69vw;
+        left: 67vw;
     }
     
     .book{
         width: 13vw;
         top: 39vh;
-        left: 43.5vw;
+        left: 39.5vw;
     }
     
     .chair{
         width: 26vw;
         top: 45vh;
-        left: 26vw;
+        left: 22vw;
     }
     
     .clock{
@@ -178,7 +178,7 @@ body{
     .phone{
         width: 6.5vw;
         top: 50.5vh;
-        left: 60vw;
+        left: 56vw;
     }
     
     .table{
