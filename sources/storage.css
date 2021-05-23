@@ -31,8 +31,8 @@ body{
 .help{
     top: 5vh;
     left: 3vw;
-    width: 5vh;
-    height: 5vh;
+    width: 6vh;
+    height: 6vh;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Mali', cursive;
@@ -144,53 +144,53 @@ body{
     left: 18vw;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 800px){
     .president{
-        width: 17vw;
-        top: 27vh;
+        width: 37vw;
+        top: 32vh;
         left: 39vw;
     }
     
     .assistant{
-        width: 9vw;
-        top: 26.5vh;
-        left: 53.75vw;
+        width: 20vw;
+        top: 31vh;
+        left: 69vw;
     }
     
     .book{
-        width: 6.5vw;
-        top: 35vh;
-        left: 40.5vw;
+        width: 13vw;
+        top: 39vh;
+        left: 43.5vw;
     }
     
     .chair{
-        width: 12vw;
-        top: 43vh;
-        left: 33vw;
+        width: 26vw;
+        top: 45vh;
+        left: 26vw;
     }
     
     .clock{
-        width: 5.5vw;
-        top: 11vh;
-        left: 34.5vw;
+        width: 10vw;
+        top: 10vh;
+        left: 28vw;
     }
     
     .phone{
-        width: 3vw;
-        top: 49vh;
-        left: 48.5vw;
+        width: 6.5vw;
+        top: 50.5vh;
+        left: 60vw;
     }
     
     .table{
-        width: 14.5vw;
-        top: 36.5vh;
-        left: 19vw;
+        width: 29vw;
+        top: 35vh;
+        left: 0;
     }
     
     .tv{
-        width: 11vw;
-        top: 19.5vh;
-        left: 18vw;
+        width: 22vw;
+        top: 15vh;
+        left: 0;
     }
 }
 
