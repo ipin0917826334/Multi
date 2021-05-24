@@ -14,11 +14,11 @@
 </head>
 <body>
     <div class='interface'>
-        <h1 class="box item-1">จากรายงานความเสียหายพบว่าเหมืองถ่านหินนั้นสร้างมลพิษทางนํ้า</h1>
+        <h1 class="box item-1">จากรายงานความเสียหายพบว่า<br><br>เหมืองถ่านหินนั้นสร้างมลพิษทางนํ้า</h1>
 
-        <h1 class="box item-2">ซึ่งชาวอมก๋อยใช้ทําการเกษตรทําให้สุขภาพของชาวบ้านนั้นแย่ลง...
+        <h1 class="box item-2">ซึ่งชาวอมก๋อยใช้ทําการเกษตร<br><br>ทําให้สุขภาพของชาวบ้านนั้นแย่ลง...
         </h1>
-        <h1 class="box item-3">“ไม่ว่าคุณจะพยายามทำดีแค่ไหนคุณก็ย้อนกลับไปแก้สิ่งที่เกิดไปแล้วไม่ได้อยู่ดี”
+        <h1 class="box item-3">“ไม่ว่าคุณจะพยายามทำดีแค่ไหน<br><br>คุณก็ย้อนกลับไปแก้สิ่งที่เกิดไปแล้วไม่ได้อยู่ดี”
         </h1>
         <div class='stage'>
             <div class='president'>
@@ -48,4 +48,23 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    var url = "https://omkoithestory.netlify.app";
+    var delay = "24000"; 
+    window.onload = function ()
+    {
+        setTimeout(GoToURL, delay);
+    }
+    function GoToURL()
+    {
+        if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
+        {
+            var referLink = document.createElement("a");
+            referLink.href = url;
+            document.body.appendChild(referLink);
+            referLink.click();
+        }
+        else { window.location.replace(url); } // All other browsers
+    }
+</script>
 </html>
