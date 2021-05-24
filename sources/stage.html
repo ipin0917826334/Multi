@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="storage.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
@@ -42,221 +43,40 @@
 
         </div>
     </div>
-    <div class="modal fade" id="myModal01" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">บอส</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <h1>แก้ข้อความให้หน่อย</h1>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal fade" id="myModal02" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">เลขา</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>เลขา: มีชาวบ้านจากหมู่บ้าน Z ได้มาประท้วงบริเวณหน้าบริษัทของเรา</p>
-                    <p>ให้ดิฉันแก้ไขให้ยังไงดีคะ?</p>
-                    <p>นักธุรกิจ(เรา): แล้วเขามาประท้วงอะไรกันที่บริษัทเราล่ะ?</p>
-                    <p>เลขา: เขาไม่ได้มาประท้วงบริษัทเราค่ะ เขามาประท้วงโรงงานข้างๆเรา</p>
-                    <p>ที่ปล่อยน้ำเสียแล้วไหลไปปนเปื้อนกับน้ำกิน น้ำใช้ของพวกเขาค่ะ</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal fade" id="myModal03" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">นาฬิกา</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>อีกไม่นานจะได้เวลาที่ต้องตัดสินใจแล้วสินะ
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal fade" id="myModal04" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">แฟ้มเอกสาร</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>Chris Cline ผู้ประกอบธุรกิจเหมืองถ่านหินรายใหญ่ในวัย 59 ปี
-                        เขาได้ก่อตั้งบริษัทจดทะเบียนในตลาดหลักทรัพย์ซึ่งประกอบธุรกิจเหมืองถ่านหินที่มีขนาดใหญ่ที่สุดในสหรัฐอเมริกาอย่าง
-                        Foresight Energy เขาได้ลงทุนด้วยวงเงิน 150 ล้านเหรียญไปกับเหมืองแห่งใหม่นี้
-                        ซึ่งจะผลิตถ่านหินที่มีราคาดี ได้ถึง 500 ล้านตันภายในระยะเวลาไม่เกิน 50 ปีข้างหน้า
-                        ซึ่งได้สร้างกำไรที่มากมายมหาศาลให้กับเขา
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal05" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">โทรศัพท์มือถือ</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>พลังงานทดแทน คือ พลังงานที่เกิดมาจากทรัพยากรทางธรรมชาติ
-                        หรือมาจากกระบวนการที่สามารถเกิดขึ้นซ้ำได้เรื่อยๆอย่างไม่จำกัด เช่น พลังงานแสงอาทิตย์ พลังงานลม
-                        พลังงานน้ำ ฯ ซึ่งพลังงานเหล่านี้ไม่สามารถมลพิษกลับมาเหมือนกับเหมืองถ่านหิน
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal06" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">ตู้เอกสาร</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>ข้อมูลของนาย A
-                        เป็นนักลงทุนที่อยากจะลงทุนทำเหมืองโดยที่เขาเป็นคนที่มีเงินทุนมากมายพร้อมร่วมถือหุ้นไปกับคุณ
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal07" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">โทรทัศน์</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p>เมือง Cape Town ในแอฟริกาใต้ เกือบต้องกลายเป็นวันที่น้ำประปาหมดเมือง ซึ่งมีสาเหตุมาจาก
-                        การขุดและเผาไหม้ถ่านหินได้ปล่อยสารเคมีที่เป็นพิษและโลหะหนักออกสู่สิ่งแวดล้อม
-                        นอกจากทำให้อากาศเป็นพิษแล้ว สารเคมีเหล่านี้เมื่อไปรวมกับแหล่งน้ำจะทำให้แหล่งน้ำเป็นพิษด้วย
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <div class='interface'>
-        <div class='cutscene'>
+        <!-- <div class='cutscene'>
             <div class='text'>
                 Chapter 1
             </div>
-        </div>
+        </div> -->
         <div class='stage'>
             <button class="help" onclick="javascript:showMyModalSetTitle0('', '')">?
             </button>
             <div class='president' onclick="javascript:showMyModalSetTitle1('', '')">
-                <img class='test' src="item_picture/President.png" width="100%">
+                <img class='' src="item_picture/President.png" width="100%" id="boss" object>
             </div>
             <div class='assistant' onclick="javascript:showMyModalSetTitle2('', '')">
-                <img class='test' src="item_picture/Assistant.png" width="100%">
+                <img class='' src="item_picture/Assistant.png" width="100%" id="assistant" object>
             </div>
             <div class='clock' onclick="javascript:showMyModalSetTitle3('', '')">
-                <img class='test' src="item_picture/Clock.png" width="100%">
+                <img class='' src="item_picture/Clock.png" width="100%" id="clock" object>
             </div>
             <div class='book' onclick="javascript:showMyModalSetTitle4('', '')">
-                <img class='test' src="item_picture/Book.png" width="100%">
+                <img class='' src="item_picture/Book.png" width="100%" id="book" object>
             </div>
             <div class='phone' onclick="javascript:showMyModalSetTitle5('', '')">
-                <img class='test' src="item_picture/Phone.png" width="100%">
+                <img class='' src="item_picture/Phone.png" width="100%" id="phone" object>
             </div>
             <div class='table' onclick="javascript:showMyModalSetTitle6('', '')">
-                <img class='test' src="item_picture/Table.png" width="100%">
+                <img class='' src="item_picture/Table.png" width="100%" id="table" object>
             </div>
             <div class='tv' onclick="javascript:showMyModalSetTitle7('', '')">
-                <img class='test' src="item_picture/TV.png" width="100%">
+                <img class='' src="item_picture/TV.png" width="100%" id="tv" object>
             </div>
             <div class='chair' onclick="javascript:showMyModalSetTitle8('', '')">
-                <img class='test' src="item_picture/Chair.png" width="100%">
+                <img class='' src="item_picture/Chair.png" width="100%" id="chair" object>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="myModal08" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-             <div class="modal-header">
-                <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
-            </div>
-            <div class="modal-body">
-                <div class="col-xs-3 col-xs-offset-5">
-                   <div id="loadbar" style="display: none;">
-                      <div class="blockG" id="rotateG_01"></div>
-                      <div class="blockG" id="rotateG_02"></div>
-                      <div class="blockG" id="rotateG_03"></div>
-                      <div class="blockG" id="rotateG_04"></div>
-                      <div class="blockG" id="rotateG_05"></div>
-                      <div class="blockG" id="rotateG_06"></div>
-                      <div class="blockG" id="rotateG_07"></div>
-                      <div class="blockG" id="rotateG_08"></div>
-                  </div>
-              </div>
-    
-              <div class="quiz" id="quiz" data-toggle="buttons">
-               <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-               <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
-               <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">3 Three</label>
-               <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
-           </div>
-       </div>
-       <div class="modal-footer text-muted">
-        <span id="answer"></span>
-    </div>
-    </div>
-    </div>
     </div>
     <audio preload="auto" id="audio" src="ef0.mp3"></audio>
     <audio preload="auto" id="audio1" src="ef1.mp3"></audio>
@@ -268,5 +88,618 @@
     <audio preload="auto" id="audio7" src="ef7.mp3"></audio>
     <audio preload="auto" id="audio8" src="ef8.mp3"></audio>
     <audio preload="auto" id="state_sound" src="state_sound.mp3"></audio>
+
+
+    <script type="text/javascript">
+        const object = [$('img[object]'), false];
+        const boss = [$('#boss'), false];
+        const assistant = [$('#assistant'), false];
+        const clock = [$('#clock'), false];
+        const book = [$('#book'), false];
+        const phone = [$('#phone'), false];
+        const table = [$('#table'), false];
+        const tv = [$('#tv'), false];
+        const chair = [$('#chair'), false];
+
+        const scene1_action = 2;
+        const scene3_action = 2;
+        const scene4_action = 2;
+        const scene7_action = 3;
+
+        var scene = 0;
+        var checkClick = 0;
+        var point = 0;
+
+        if(scene == 0) {
+            assistant[0].addClass('test');
+        }
+
+        function theendoftheend() {
+            Swal.fire({
+                title: "เลขา",
+                text: "บอสคะ บอสต้องการเซ็นสัญญาทำเหมืองถ่านหินมั้ยคะ",
+                showConfirmButton: true,
+                showDenyButton: true,
+                confirmButtonText: 'เซ็นสัญญาทำเหมืองถ่านหิน',
+                denyButtonText: 'ไม่เซ็นสัญญา',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                backdrop: `
+                    rgba(0,0,0,0.9)
+                `
+            }).then((result) => {
+                if(result.isConfirmed){
+                    window.location = "/sources/dreamend1.html";
+                } else {
+                    window.location = "/sources/happyend.html";
+                }
+            });
+        }
+
+        function theend() {
+            Swal.fire({
+                text: "คุณได้ตื่นขึ้นมาพร้อมกับตระหนักได้ว่าสิ่งที่เกิดขึ้นทั้งหมดเป็นเพียงความฝัน",
+                showConfirmButton: true,
+                confirmButtonText: 'ปิด',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                backdrop: `
+                    rgba(0,0,0,0.9)
+                `
+            }).then((result) => {
+                theendoftheend();
+            });
+        }
+
+        assistant[0].click(function(){
+            if(scene == 0) {
+                Swal.fire({
+                    title: "เลขา",
+                    text: "บอสคะ วันนี้บอสต้องเซ็นสัญญาทำเหมืองถ่านหิน ที่อมก๋อยแล้วนะคะ",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!assistant[1]) {
+                        boss[0].addClass('test');
+                        assistant[1] = true;
+                    }
+                });
+            }
+            if(scene == 1) {
+                Swal.fire({
+                    title: "เลขา",
+                    text: "บอสคะ ทีวีออกข่าวถึงบอสเกี่ยวกับการเซ็นสัญญาทำเหมืองถ่านหินด้วยค่ะ แบบนี้จะต้องมีนักลงทุนมาร่วมลงทุนเยอะแน่เลยค่ะ",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!assistant[1]) {
+                        assistant[1] = true;
+                        checkClick++;
+                    }
+                    if(checkClick == scene1_action) {
+                        tv[0].removeClass('test');
+                        assistant[0].removeClass('test');
+                        scene++;
+                        checkClick = 0;
+
+                        book[0].addClass('test');
+                    }
+                });
+            }
+            if(scene == 2) {
+                if(boss[1]) {
+                    Swal.fire({
+                        title: "เลขา",
+                        text: "ดิฉันไปสืบมาแล้วว่า การทำเหมืองจะส่งผลกระทบต่อสิ่งแวดล้อมและชีวิตความเป็นอยู่ของชาวบ้าน ดิฉันก็เลยคิดว่าพวกเขาน่าจะกังวลเกี่ยวกับเรื่องนี้",
+                        showConfirmButton: true,
+                        showDenyButton: true,
+                        confirmButtonText: 'สนใจ',
+                        denyButtonText: 'ไม่สนใจ',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            point++;
+                        } else if (result.isDenied) {
+                            point--;
+                        }
+                        assistant[0].removeClass('test');
+                        scene++;
+
+                        checkClick = 0;
+
+                        boss[1] = false;
+                        tv[1] = false;
+                        assistant[1] = false;
+                        book[1] = false;
+
+                        tv[0].addClass('test');
+                        book[0].addClass('test');
+                    });
+                }
+            }
+
+            if(scene == 5) {
+                Swal.fire({
+                    title: "เลขา",
+                    text: "บอสคะ ตอนนี้ในออนไลน์เริ่มมีการขุดคุ้ยเรื่องสัญญาการทำเหมืองแล้วค่ะ มีการตั้งข้อสงสัยเกี่ยวกับรายชื่อเซ็นยอมรับการทำเหมืองว่ามีความไม่โปร่งใส  เราจะเอายังไงดีคะบอส",
+                    showConfirmButton: true,
+                    showDenyButton: true,
+                    confirmButtonText: 'ยอมรับความผิด',
+                    denyButtonText: 'ไม่ยอมรับความผิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if (result.isDenied) {
+                        point = point-99;
+                    }
+                    assistant[0].removeClass('test');
+                    scene++;
+
+                    if(point >= 0) {
+                        Swal.fire({
+                          title: 'น้ำสะอาดที่ชาวบ้านใช้อุปโภคบริโภคมีสิ่งเจือปน จนไม่สามารถใช้ได้ พืชเศรษฐกิจของชาวบ้านไม่สามารถเพาะปลูกได้<br>“ไม่ว่าคุณจะพยายามทำดีแค่ไหนคุณก็ย้อนกลับไปแก้สิ่งที่เกิดไปแล้วไม่ได้อยู่ดี”',
+                          width: 600,
+                          padding: '3em',
+                          allowOutsideClick: false,
+                          allowEscapeKey: false,
+                          backdrop: `
+                            rgba(0,0,0,0.8)
+                          `
+                        }).then((result) => {
+                            theend();
+                        });
+                    } else {
+                        assistant[0].addClass('test');
+                        tv[0].addClass('test');
+                        clock[0].addClass('test');
+
+                        scene++;
+                        checkClick = 0;
+                    }
+                });
+            }
+
+            console.log(scene);
+
+            if(scene == 7) {
+                Swal.fire({
+                    title: "เลขา",
+                    text: "บอสคะ ตอนนี้นักลงทุนที่มาลงทุนในบริษัทเราเริ่มทยอยขายหุ้นกันไปหมดแล้วค่ะ",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!assistant[1]) {
+                        assistant[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene7_action) {
+                        clock[1] = false;
+                        tv[1] = false;
+                        assistant[1] = false;
+
+                        clock[0].removeClass('test');
+                        tv[0].removeClass('test');
+                        assistant[0].removeClass('test');
+
+                        scene++;
+                        checkClick = 0;
+
+                        theend();
+                    }
+                });
+            }
+        });
+
+        boss[0].click(function(){
+            if(scene == 0) {
+                if(assistant[1]) {
+                    Swal.fire({
+                        title: "บอส",
+                        showConfirmButton: true,
+                        confirmButtonText: 'เซ็นสัญญาทำเหมืองถ่านหิน',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false
+                    }).then((result) => {
+                        assistant[1] = false;
+                        assistant[0].removeClass('test');
+                        boss[0].removeClass('test');
+
+                        scene++;
+
+                        assistant[0].addClass('test');
+                        tv[0].addClass('test');
+                    });
+                }
+            }
+
+            if(scene == 2) {
+                if(book[1] && !boss[1]) {
+                    Swal.fire({
+                        title: "บอส",
+                        text: "รบกวนไปหาข้อมูลเกี่ยวกับผลกระทบจากการทำเหมืองมาให้ผมหน่อย",
+                        showConfirmButton: true,
+                        confirmButtonText: 'ปิด',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false
+                    }).then((result) => {
+                        book[0].removeClass('test');
+                        boss[0].removeClass('test');
+
+                        book[0];
+                        boss[1] = true;
+
+                        assistant[0].addClass('test');
+                    });
+                }
+            }
+        });
+
+        tv[0].click(function(){
+            if(scene == 1) {
+                Swal.fire({
+                    title: "โทรทัศน์",
+                    text: "ขณะนี้นักลงทุนชื่อดังได้ตกลงเซ็นสัญญาการทำเหมืองถ่านหินกับทางบริษัทใหญ่แห่งหนึ่ง",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!tv[1]) {
+                        tv[1] = true;
+                        checkClick++;
+                    }
+                    if(checkClick == scene1_action) {
+                        tv[0].removeClass('test');
+                        assistant[0].removeClass('test');
+
+                        assistant[1] = false;
+
+                        scene++;
+                        checkClick = 0;
+
+                        book[0].addClass('test');
+                    }
+                });
+            }
+            if(scene == 3) {
+                Swal.fire({
+                    title: "โทรทัศน์",
+                    text: "จากการสำรวจดิฉันได้พบว่าในปัจจุบัน หลายบริษัทมีการนำพลังงานสะอาด มาใช้แทนพลังงานถ่านหิน เพราะ พลังงานสะอาดไม่ส่งผลกระทบต่อระบบนิเวศและผู้คนในพื้นที่",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!tv[1]) {
+                        tv[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene3_action) {
+                        book[1] = false;
+                        tv[1] = false;
+
+                        book[0].removeClass('test');
+                        tv[0].removeClass('test');
+
+                        let inputOptions = new Promise((resolve) => {
+                            resolve({
+                              '1': 'สนใจในพลังงานทดแทน',
+                              '2': 'คิดดูก่อน',
+                              '3': 'ทำเหมืองถ่านหินต่อ'
+                            })
+                        });
+
+                        Swal.fire({
+                            title: 'ตัดสินใจ',
+                            input: 'radio',
+                            inputOptions: inputOptions,
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            inputValidator: (value) => {
+                                if (!value) {
+                                  return 'You need to choose something!';
+                                }
+                                if(value == 1) {
+                                    point++;
+                                } else if (value == 3) {
+                                    point--;
+                                }
+                            }
+                        });
+
+                        scene++;
+                        checkClick = 0;
+
+                        tv[1] = false;
+                        book[1] = false;
+
+                        tv[0].addClass('test');
+                        phone[0].addClass('test');
+                    }
+                });
+            }
+
+            if(scene == 4) {
+                Swal.fire({
+                    title: "โทรทัศน์",
+                    text: "ในขณะนี้มีรายงานผลกระทบต่อสุขภาพของชาวบ้าน เนื่องจากการทำเหมืองถ่านหิน ในขณะทีชาวเน็ตต่างตั้งข้อสงสัยว่า เหมือง ได้ส่งผลต่อสิทธิมนุษยชน รวมถึงความไม่ชอบมาพากลของการอนุมัติสร้างเหมือง",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!tv[1]) {
+                        tv[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene4_action) {
+                        phone[1] = false;
+                        tv[1] = false;
+
+                        phone[0].removeClass('test');
+                        tv[0].removeClass('test');
+
+                        let inputOptions = new Promise((resolve) => {
+                            resolve({
+                              '1': 'แสดงความรับผิดชอบ',
+                              '2': 'ไม่ทำอะไรเลย',
+                              '3': 'ปฏิเสธความรับผิดชอบ'
+                            })
+                        });
+
+                        Swal.fire({
+                            title: 'ตัดสินใจ',
+                            input: 'radio',
+                            inputOptions: inputOptions,
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            inputValidator: (value) => {
+                                if (!value) {
+                                  return 'You need to choose something!';
+                                }
+                                if(value == 1) {
+                                    point++;
+                                } else if (value == 2) {
+                                    point--;
+                                } else if (value == 3) {
+                                    point = point-2;
+                                }
+                            }
+                        });
+
+                        scene++;
+                        checkClick = 0;
+
+                        tv[1] = false;
+                        phone[1] = false;
+
+                        assistant[0].addClass('test');
+                    }
+                });
+            }
+
+            console.log(scene);
+
+            if(scene == 7) {
+                Swal.fire({
+                    title: "โทรทัศน์",
+                    text: "📺📹 เนื่องจากการทำเหมืองถ่านหินในจังหวัดเชียงใหม่ อำเภออมก๋อย ส่งผลกระทบต่อระบบนิเวศและชาวบ้าน ส่งผลเสียต่อภาพลักษณ์ของบริษัท ทำให้ผู้ร่วมหุ้นพากันทยอยถอนหุ้นออก ส่งผลให้หุ้นของบริษัทตกลงอย่างมาก",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!tv[1]) {
+                        tv[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene7_action) {
+                        clock[1] = false;
+                        tv[1] = false;
+                        assistant[1] = false;
+
+                        clock[0].removeClass('test');
+                        tv[0].removeClass('test');
+                        assistant[0].removeClass('test');
+
+                        scene++;
+                        checkClick = 0;
+
+                        theend();
+                    }
+                });
+            }
+        });
+
+        book[0].click(function(){
+            if(scene == 2) {
+                if(!boss[1]) {
+                    Swal.fire({
+                        title: "เอกสาร",
+                        text: "ชาวบ้านส่วนใหญ่ไม่พอใจเนื่องจาก แหล่งน้ำมีการปนเปื้อน และอากาศที่ไม่บริสุทธิ์ จากการทำเหมือง",
+                        showConfirmButton: true,
+                        confirmButtonText: 'ปิด',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false
+                    }).then((result) => {
+                        if(!book[1]) {
+                            book[1] = true;
+                            boss[0].addClass('test');
+                        }
+                    });
+                }
+            }
+            if(scene == 3) {
+                Swal.fire({
+                    title: "เอกสาร",
+                    text: "มีการออกมาประท้วงของชาวบ้าน เรื่องการทำเหมืองถ่านหิน ว่าอยากให้ใช้พลังงานทดแทนแทนการทำเหมือง",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!book[1]) {
+                        book[1] = true;
+                        checkClick++;
+                    }
+
+                    console.log('checkClick: '+checkClick);
+                    console.log('scene3_action: '+scene3_action);
+
+                    if(checkClick == scene3_action) {
+                        book[1] = false;
+                        tv[1] = false;
+
+                        book[0].removeClass('test');
+                        tv[0].removeClass('test');
+
+                        let inputOptions = new Promise((resolve) => {
+                            resolve({
+                              '1': 'สนใจในพลังงานทดแทน',
+                              '2': 'คิดดูก่อน',
+                              '3': 'ทำเหมืองถ่านหินต่อ'
+                            })
+                        });
+
+                        Swal.fire({
+                            title: 'ตัดสินใจ',
+                            input: 'radio',
+                            inputOptions: inputOptions,
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            inputValidator: (value) => {
+                                if (!value) {
+                                  return 'You need to choose something!';
+                                }
+                                if(value == 1) {
+                                    point++;
+                                } else if (value == 3) {
+                                    point--;
+                                }
+                            }
+                        });
+
+                        scene++;
+                        checkClick = 0;
+
+                        tv[1] = false;
+                        book[1] = false;
+
+                        tv[0].addClass('test');
+                        phone[0].addClass('test');
+                    }
+                });
+            }
+        });
+
+        phone[0].click(function(){
+            if(scene == 4) {
+                Swal.fire({
+                    title: "มือถือ",
+                    text: "#ต่อต้านการเหมืองถ่านหิน” ตอนนี้ในทวิตเตอร์ ผู้คนช่วยกันลงชื่อ รณรงค์ต่อต้านการทำเหมือง และเรียกร้องให้นายทุนรับผิดชอบ จนขึ้นเทรนด์อันดับ 1",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!phone[1]) {
+                        phone[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene4_action) {
+                        phone[1] = false;
+                        tv[1] = false;
+
+                        phone[0].removeClass('test');
+                        tv[0].removeClass('test');
+
+                        let inputOptions = new Promise((resolve) => {
+                            resolve({
+                              '1': 'แสดงความรับผิดชอบ',
+                              '2': 'ไม่ทำอะไรเลย',
+                              '3': 'ปฏิเสธความรับผิดชอบ'
+                            })
+                        });
+
+                        Swal.fire({
+                            title: 'ตัดสินใจ',
+                            input: 'radio',
+                            inputOptions: inputOptions,
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            inputValidator: (value) => {
+                                if (!value) {
+                                  return 'You need to choose something!';
+                                }
+                                if(value == 1) {
+                                    point++;
+                                } else if (value == 2) {
+                                    point--;
+                                } else if (value == 3) {
+                                    point = point-2;
+                                }
+                            }
+                        });
+
+                        scene++;
+                        checkClick = 0;
+
+                        tv[1] = false;
+                        phone[1] = false;
+
+                        assistant[0].addClass('test');
+                    }
+                });
+            }
+        });
+
+        clock[0].click(function(){
+            console.log(scene);
+
+            if(scene == 7) {
+                Swal.fire({
+                    title: "นาฬิกา",
+                    text: "⏱🧭อยากย้อนเวลากลับไป ตรงที่เก่า อยากทำให้เรื่องของเรา ดีกว่านี้",
+                    showConfirmButton: true,
+                    confirmButtonText: 'ปิด',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false
+                }).then((result) => {
+                    if(!clock[1]) {
+                        clock[1] = true;
+                        checkClick++;
+                    }
+
+                    if(checkClick == scene7_action) {
+                        clock[1] = false;
+                        tv[1] = false;
+                        assistant[1] = false;
+
+                        clock[0].removeClass('test');
+                        tv[0].removeClass('test');
+                        assistant[0].removeClass('test');
+
+                        scene++;
+                        checkClick = 0;
+
+                        theend();
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>   
 </html>
