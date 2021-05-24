@@ -48,4 +48,23 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    var url = "https://omkoithestory.netlify.app";
+    var delay = "24000"; 
+    window.onload = function ()
+    {
+        setTimeout(GoToURL, delay);
+    }
+    function GoToURL()
+    {
+        if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
+        {
+            var referLink = document.createElement("a");
+            referLink.href = url;
+            document.body.appendChild(referLink);
+            referLink.click();
+        }
+        else { window.location.replace(url); } // All other browsers
+    }
+</script>
 </html>
