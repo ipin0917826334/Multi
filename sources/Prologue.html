@@ -6,41 +6,65 @@
     <title>Omkoi Legacy</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        font-family: 'Mali', cursive;
+    }
     h1 {
-        font-size: 130px;
+        font-size: 100px;
         color: white;
-        font-family: 'Sriracha', cursive;
         text-align: center;
     }
     p {
-        font-size: 40px;
+        font-size: 26px;
         color: white;
-        font-family: 'Sriracha', cursive;
-        text-indent: 2.5em;
+        text-indent: 100px;
     }
     button{
-        font-family: 'Sriracha', cursive;
+        font-size: 28px;
+        font-family: 'Mali', cursive;
         position: relative;
-        display: flex;
-        top: 140%;
+        width: 30%;
+        height: 10%;
+        bottom: -25%;
         left: 50%;
+        transform-origin: center;
         transform: translate(-50%, -50%);
-        transform: scale(5);
         cursor: pointer;
         border-radius:100%;
         border: 10px;
-        align-items: center;
-        justify-content: center center;
+    }
+    .wrap{
+        width: 60%;
+        height: 90%;
+        display: block;
+    }
+    @media screen and (max-width: 1024px) {
+        h1{
+            font-size: 7.5vh;
+        }
+        p{
+            font-size: 3.5vw;
+            text-indent: 50px;
+        }
+        button{
+            font-size: 10vw;
+            width: 45vw;
+            height: 12.5vh;    
+        }
     }
 </style>
-<body style="background-color: black;">
-    <div>
+<body>
+    <div class='wrap'>
         <h1>Prologue</h1>
-        <p>เราเป็นนักลงทุนชื่อดังที่มีไม่เคยลงทุนเรื่องอะไรแล้วล้มเหลวหรือมีชื่อเสียงทางลบเลย เพราะมีความสามารถในการย้อนเวลากลับมายังจุดเซฟได้</p>
-        <p>เรานั้นจะสร้างจุดเซฟตัวเองก่อนที่จะเริ่มลงทุน จากนั้นเราจะลงทุนไปในแบบต่างๆแล้วดูว่าแบบไหนให้ผลลัพธ์ดีที่สุด เพื่อที่เราจะได้เลือกผลลัพธ์นั้นในท้ายที่สุด</p>
-        <p>ในปัจจุบันเรากำลังจะลงทุนทำเหมืองถ่านหิน เอาล่ะมาดูซิว่าตัวเลือกของเราจะได้ผลลัพธ์แบบไหนกัน</p>
-        <button><a href=stage.html>เริ่มเกม</a></button>
+        <p>คุณเป็นนักลงทุนชื่อดังที่ไม่เคยลงทุนเรื่องอะไรแล้วล้มเหลวและไม่เคยมีชื่อเสียงทางลบ นั้นก็เพราะว่าคุณมีความสามารถในการย้อนเวลากลับมายังจุดเซฟได้</p>
+        <p>คุณนั้นจะสร้างจุดเซฟตัวเองก่อนที่จะเริ่มลงทุน จากนั้นคุณจะลงทุนไปในแบบต่างๆ แล้วดูว่าแบบไหนให้ผลลัพธ์ดีที่สุด เพื่อที่คุณจะได้เลือกผลลัพธ์นั้นในตอนท้าย</p>
+        <p>ซึ่งในปัจจุบันคุณกำลังจะลงทุนทำเหมืองถ่านหิน เอาล่ะมาดูซิว่าตัวเลือกของคุณจะได้ผลลัพธ์แบบไหนออกมา</p>
+        <a href=stage.html><button>เริ่มเกม</button></a>
     </div>
 </body>
 </html>
