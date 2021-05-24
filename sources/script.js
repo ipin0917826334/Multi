@@ -1,3 +1,6 @@
+window.onload = function() {
+    $('#myModal00').modal('show');
+}
 function showMyModalSetTitle0(myTitle, myBodyHtml) {
         $('#myModalTitle').html(myTitle);
         $('#myModalBody').html(myBodyHtml);
