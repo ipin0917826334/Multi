@@ -272,12 +272,28 @@ body {
 }
 .test:hover {
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @keyframes via {
   50% {
-    transform: translateY(5px);
+    transform: scale(1.05);
+  }
+}
+
+.pho {
+  transition: all 0.3s;
+  cursor: pointer;
+  animation: via2 1s linear infinite;
+}
+.pho:hover {
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+  transform: scale(1.2);
+}
+
+@keyframes via2 {
+  50% {
+    transform: scale(1.2);
   }
 }
 
@@ -832,4 +848,3 @@ label .glyphicon {
   color: #fff;
 }
 
-confirmButtonColor: '#4fdc55',
