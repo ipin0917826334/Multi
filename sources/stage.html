@@ -5,14 +5,15 @@
     <title>Omkoi Legacy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="storage.css">
     <script src="script.js"></script>
     <script src="help.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="storage.css">
 </head>
 <body>
     <div class="modal fade" id="myModal00" role="dialog">
@@ -39,7 +40,7 @@
                     <p>ถ้าเล่นเเล้วได้ Bad End จะลิ้งไปยังเว็ปไซต์ดูเพิ่มเติม</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default color" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
@@ -114,6 +115,7 @@
 
         if(scene == 0) {
             assistant[0].addClass('test');
+            // assistant[0].addClass('show');
         }
 
         function theendoftheend() {
@@ -123,6 +125,7 @@
                 showConfirmButton: true,
                 showDenyButton: true,
                 confirmButtonText: 'เซ็นสัญญาทำเหมืองถ่านหิน',
+                confirmButtonColor: '#4fdc55',
                 denyButtonText: 'ไม่เซ็นสัญญา',
                 allowOutsideClick: false,
                 allowEscapeKey: false,
@@ -200,6 +203,7 @@
                         showConfirmButton: true,
                         showDenyButton: true,
                         confirmButtonText: 'สนใจ',
+                        confirmButtonColor: '#4fdc55',
                         denyButtonText: 'ไม่สนใจ',
                         allowOutsideClick: false,
                         allowEscapeKey: false
@@ -232,6 +236,7 @@
                     showConfirmButton: true,
                     showDenyButton: true,
                     confirmButtonText: 'ยอมรับความผิด',
+                    confirmButtonColor: '#4fdc55',
                     denyButtonText: 'ไม่ยอมรับความผิด',
                     allowOutsideClick: false,
                     allowEscapeKey: false
@@ -247,6 +252,7 @@
                           title: 'น้ำสะอาดที่ชาวบ้านใช้อุปโภคบริโภคมีสิ่งเจือปน จนไม่สามารถใช้ได้ พืชเศรษฐกิจของชาวบ้านไม่สามารถเพาะปลูกได้<br>“ไม่ว่าคุณจะพยายามทำดีแค่ไหนคุณก็ย้อนกลับไปแก้สิ่งที่เกิดไปแล้วไม่ได้อยู่ดี”',
                           width: 600,
                           padding: '3em',
+                          confirmButtonColor: '#4fdc55',
                           allowOutsideClick: false,
                           allowEscapeKey: false,
                           backdrop: `
@@ -307,6 +313,7 @@
                         title: "บอส",
                         showConfirmButton: true,
                         confirmButtonText: 'เซ็นสัญญาทำเหมืองถ่านหิน',
+                        confirmButtonColor: '#4fdc55',
                         allowOutsideClick: false,
                         allowEscapeKey: false
                     }).then((result) => {
@@ -404,6 +411,7 @@
                             title: 'ตัดสินใจ',
                             input: 'radio',
                             inputOptions: inputOptions,
+                            confirmButtonColor: '#4fdc55',
                             allowOutsideClick: false,
                             allowEscapeKey: false,
                             inputValidator: (value) => {
@@ -463,6 +471,7 @@
                             title: 'ตัดสินใจ',
                             input: 'radio',
                             inputOptions: inputOptions,
+                            confirmButtonColor: '#4fdc55',
                             allowOutsideClick: false,
                             allowEscapeKey: false,
                             inputValidator: (value) => {
@@ -578,6 +587,7 @@
                             title: 'ตัดสินใจ',
                             input: 'radio',
                             inputOptions: inputOptions,
+                            confirmButtonColor: '#4fdc55',
                             allowOutsideClick: false,
                             allowEscapeKey: false,
                             inputValidator: (value) => {
@@ -639,6 +649,7 @@
                             title: 'ตัดสินใจ',
                             input: 'radio',
                             inputOptions: inputOptions,
+                            confirmButtonColor: '#4fdc55',
                             allowOutsideClick: false,
                             allowEscapeKey: false,
                             inputValidator: (value) => {
