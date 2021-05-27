@@ -5,66 +5,38 @@
     <title>Omkoi Legacy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="storage.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            overflow:hidden;
+            margin: auto;
+            background-image: url("Ending_2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+    </style>
 </head>
 <body>
-    <div class='interface'>
         <h1 class="box item-1">จากรายงานความเสียหายพบว่า<br><br>เหมืองถ่านหินนั้นสร้างมลพิษทางนํ้า</h1>
 
         <h1 class="box item-2">ซึ่งชาวอมก๋อยใช้ทําการเกษตร<br><br>ทําให้สุขภาพของชาวบ้านนั้นแย่ลง...
         </h1>
         <h1 class="box item-3">“ไม่ว่าคุณจะพยายามทำดีแค่ไหน<br><br>คุณก็ย้อนกลับไปแก้สิ่งที่เกิดไปแล้วไม่ได้อยู่ดี”
         </h1>
-        <div class='stage'>
-            <div class='president'>
-                <img src="item_picture/President.png" width="100%">
-            </div>
-            <div class='assistant'>
-                <img src="item_picture/Assistant.png" width="100%">
-            </div>
-            <div class='clock'>
-                <img src="item_picture/Clock.png" width="100%">
-            </div>
-            <div class='book'>
-                <img src="item_picture/Book.png" width="100%">
-            </div>
-            <div class='phone'>
-                <img src="item_picture/Phone.png" width="100%">
-            </div>
-            <div class='table'>
-                <img src="item_picture/Table.png" width="100%">
-            </div>
-            <div class='tv'>
-                <img src="item_picture/TV.png" width="100%">
-            </div>
-            <div class='chair'>
-                <img src="item_picture/Chair.png" width="100%">
-            </div>
-        </div>
-    </div>
+        <a href="https://omkoithestory.netlify.app"><h1 class="endtxt2">คลิกเพื่อเริ่มเกมใหม่</h1></a>
+        <a href="https://omkoi.netlify.app"><h1 class="endtxt3">คลิกเพื่อศึกษาเพิ่มเติม</h1></a>
 </body>
-<script type="text/javascript">
-    var url = "https://omkoi.netlify.app";
-    var delay = "24000"; 
-    window.onload = function ()
-    {
-        setTimeout(GoToURL, delay);
-    }
-    function GoToURL()
-    {
-        if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
-        {
-            var referLink = document.createElement("a");
-            referLink.href = url;
-            document.body.appendChild(referLink);
-            referLink.click();
-        }
-        else { window.location.replace(url); } // All other browsers
-    }
-</script>
 </html>
