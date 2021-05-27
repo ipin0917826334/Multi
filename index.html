@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html onkeyup="continew()" onclick="continew()">
-<head>
-<script>
-    function continew() {
-        window.location.href='sources/loading.html';
-    }
-</script>
-<title>Omkoi Legacy</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
-    body{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        margin: auto;
-        background-image:url("/sources/Game_cover.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
-    }
-    a{
-        width: 200%;
-        height: 200%;
-        background-color: coral;
-    }
-    button{
-        cursor: pointer;
-    }
-    .menu{
-        display: block;
-        position: absolute;
-        text-align: center;
-    }
-    h1{
-        color: rgb(38, 84, 184);
-        text-align: center;
-        font-family: 'Frijole', cursive;
-        font-size: 12vw;
-    }
-    .butt{
-        position: fixed;
-        bottom: 5%;
-        font-family: myFirstFont;
-        font-size: 48px;
-        color: rgb(54, 61, 78);
-        animation: aura-menu 400ms infinite alternate-reverse;
-    }
-    section { 
-    width: 100%; 
-    height: 100vh;
-    position: relative;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
-    animation: rain 0.4s linear infinite; 
-    opacity: 0; 
-    }
-    @keyframes aura-menu{
-    from{
-        text-shadow: 0px 0px 0px;
-    }
-    to{
-        text-shadow: 0px 0px 15px yellowgreen;
-    }
-    }
-    @keyframes rain { 
-    0% { 
-        background-position: 0 0; 
-        opacity: 1; 
-    } 
 
-    100% { 
-        background-position: 10% 100%; 
-        opacity: 1; 
-    } 
-}
-</style>
+<head>
+   
+    <script>
+        function continew() {
+            window.location.href = 'sources/loading.html';
+        }
+    </script>
+    <title>Omkoi Legacy</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+        body {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            margin: auto;
+            background-image: url("/sources/Game_cover.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        a {
+            width: 200%;
+            height: 200%;
+            background-color: coral;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .menu {
+            display: block;
+            position: absolute;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(38, 84, 184);
+            text-align: center;
+            font-family: 'Frijole', cursive;
+            font-size: 12vw;
+        }
+
+        .butt {
+            position: fixed;
+            bottom: 5%;
+            font-family: myFirstFont;
+            font-size: 48px;
+            color: rgb(54, 61, 78);
+            animation: aura-menu 400ms infinite alternate-reverse;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png);
+            animation: rain 0.4s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes aura-menu {
+            from {
+                text-shadow: 0px 0px 0px;
+            }
+
+            to {
+                text-shadow: 0px 0px 15px yellowgreen;
+            }
+        }
+
+        @keyframes rain {
+            0% {
+                background-position: 0 0;
+                opacity: 1;
+            }
+
+            100% {
+                background-position: 10% 100%;
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class = 'menu'>
+    <div class='menu'>
         <h1>OMKOI LEGACY</h1>
         <!-- <a href="stage.html"></a><button>Click me</button></a> -->
     </div>
-    <section></section> 
+    <section></section>
     <h3 class="butt">PRESS ANY BUTTON</h3>
     <audio src="sources/rain.mp3"></audio>
     <script>
         window.addEventListener("DOMContentLoaded", event => {
-        const audio = document.querySelector("audio");
-        audio.volume = 0.2;
-        audio.play();
-    });
-    </script>   
+            const audio = document.querySelector("audio");
+            audio.volume = 0.2;
+            audio.play();
+        });
+    </script>
 </body>
+
 </html>
