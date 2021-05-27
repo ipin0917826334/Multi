@@ -138,6 +138,52 @@ body {
   transform: translate(-50%, -50%);
   animation: fadere 4s 16s backwards;
 }
+.endtxt2 {
+  color: rgb(230, 194, 38);
+  font-family: "Mali", cursive;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-size: 4vw;
+  white-space: nowrap;
+  text-shadow:
+     3px  3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  animation: fadere 4s 15s backwards;
+  z-index: 999;
+}
+.endtxt2:hover{
+  cursor: pointer;
+  font-size: 6vw;
+}
+.endtxt3 {
+  color: rgb(72, 255, 0);
+  font-family: "Mali", cursive;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  font-size: 4vw;
+  white-space: nowrap;
+  text-shadow:
+     3px  3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  animation: fadere 4s 15s backwards;
+  z-index: 999;
+}
+.endtxt3:hover{
+  cursor: pointer;
+  font-size: 6vw;
+}
 .tomato{
   margin-top: 32rem;
   margin-left: 12rem;
