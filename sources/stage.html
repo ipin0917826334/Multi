@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript" defer>
+        window.onload = function() {
+            $('#myModal00').modal('show');
+            }
+    </script>
     <title>Omkoi Legacy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,15 +15,12 @@
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="/dist/sweetalert2.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="storage.css">
 </head>
-<body onload="javascript:window.onload = function() {
-    $('#myModal00').modal('show');
-    }">
+<body>
     <div class="modal fade" id="myModal00" role="dialog">
         <div class="modal-dialog">
 
