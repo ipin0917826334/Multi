@@ -30,7 +30,7 @@ body {
 
 .help {
   color: rgb(0, 0, 0);
-  top: 50px;
+  top: 5vh;
   left: 3vw;
   width: 6vh;
   height: 6vh;
@@ -50,7 +50,7 @@ body {
 }
 .link {
   color: black;
-  top: 150px;
+  top: 13vh;
   left: 3vw;
   width: 6vh;
   height: 6vh;
@@ -322,6 +322,9 @@ body {
   }
   .help {
     top: -15vh;
+  }
+  .link {
+    top: -7vh;
   }
   .president {
     width: 35%;
