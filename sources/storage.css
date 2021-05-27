@@ -380,6 +380,10 @@ body {
   vertical-align: middle;
   border-radius: 2em;
   box-shadow: 20px 10px;
+  display: flex;
+  top:40%;
+  text-align:center center;
+  justify-content: center;
 }
 .item-1 {
   animation-name: anim;
