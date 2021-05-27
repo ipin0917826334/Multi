@@ -162,7 +162,7 @@ body {
   font-size: 6vw;
 }
 .endtxt3 {
-  color: rgb(72, 255, 0);
+  color: rgb(51, 255, 0);
   font-family: "Mali", cursive;
   position: absolute;
   top: 58%;
@@ -404,16 +404,14 @@ body {
 
 .item-1,
 .item-2,
-.item-3 {
+.item-3,
+.dbox {
   font-family: "Mali", cursive;
   position: absolute;
   display: block;
   top: 2em;
   width: 60%;
   font-size: 2em;
-  animation-duration: 20s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
   z-index: 99;
 }
 .box {
@@ -430,6 +428,14 @@ body {
   top:40%;
   text-align:center center;
   justify-content: center;
+}
+.dbox{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  top:20%;
+  opacity: 60%;
+  width: 60%;
+  height: 60%;
+  animation:fadere1 4s 15s backwards,aura-ss 500ms 15s cubic-bezier(0.23, 1, 0.320, 1) infinite alternate;
 }
 .item-1 {
   animation-name: anim;
@@ -488,7 +494,14 @@ body {
     box-shadow: 0px 0px 15px rgb(129, 63, 1);
   }
 }
-
+@keyframes aura-ss {
+  from {
+    text-shadow: 0px 0px 0px;
+  }
+  to {
+    text-shadow: 0px 0px 15px black;
+  }
+}
 @keyframes fade {
   0% {
     opacity: 100%;
@@ -522,6 +535,15 @@ body {
   100% {
     opacity: 100%;
     z-index: -1;
+  }
+}
+@keyframes fadere1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    z-index: -1;
+    opacity: 60%;
   }
 }
 #qid {
