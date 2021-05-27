@@ -30,7 +30,7 @@ body {
 
 .help {
   color: rgb(0, 0, 0);
-  top: 5vh;
+  top: 50px;
   left: 3vw;
   width: 6vh;
   height: 6vh;
@@ -50,7 +50,7 @@ body {
 }
 .link {
   color: black;
-  top: 13vh;
+  top: 150px;
   left: 3vw;
   width: 6vh;
   height: 6vh;
