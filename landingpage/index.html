@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkoi</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Chonburi&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+        integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+    <script> let controller = new ScrollMagic.Controller();</script>
+    <div class="sun"></div>
+    <section id="page1" class="page">
+
+        <div class="header qoute">อมก๋อย
+            <svg viewBox="0 0 100 100" class="role">
+                <path d="M0 0 v50" stroke-width="1" stroke="#4b2800aa" fill="none" />
+            </svg>
+        </div>
+        <div id="quote1" class="q-set q-size-n qoute">
+            “อมก๋อย” เป็นอำเภอใน จ.เชียงใหม่ มีอากาศเย็นตลอดปี
+            <br />ทำให้เหมาะสำหรับการท่องเที่ยวทางธรรมชาติที่มีความอุดมสมบูรณ์
+        </div>
+        <!-- <h1 id="quote1" class="q-set q-size-n qoute q-anime">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">“อมก๋อย” เป็นอำเภอใน จ.เชียงใหม่ มีอากาศเย็นตลอดปี
+                    ทำให้เหมาะสำหรับการท่องเที่ยวทางธรรมชาติที่มีความอุดมสมบูรณ์</span>
+            </span>
+        </h1> -->
+
+        <div id="quote2" class="q-set q-size-b qoute">
+            ทั้งนี้ ยังเป็นบ้านของกลุ่มชาติพันธุ์กะเหรี่ยงโป มีการทำไร่หมุนเวียน เป็นแหล่งปลูกมะเขือเทศ
+            และฟักทองแหล่งใหญ่เพื่อส่งออกไปยังหลายพื้นที่ ผลิตผลทั้งสองชนิดถือเป็นรายได้หลักของชุมชนกะเหรี่ยงแห่งนี้
+        </div>
+
+        <img class="tomato" alt="tomato" src="./img/tomato.png" />
+
+        <div class="bg-light"></div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".tomato", 1, { rotation: 360, ease: Linear.easeNone });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".tomato",
+                    duration: 400,
+                    offset: 100,
+                })
+                    .setPin(".tomato", { pushFollowers: true })
+                    .setTween(tween)
+                    // .addIndicators({ name: "tomato down" })
+                    .addTo(controller);
+            });
+        </script>
+
+    </section>
+
+    <section id="page2" class="page">
+        <img class="tat" alt="truck and tomato" src="./img/truckandtomato.png" />
+        <div id="quote3" class="q-set q-size-b qoute">
+            “หน้าแล้งไม่มีมะเขือเทศที่ไหนมีแค่กะเบอะดินแค่อมก๋อยที่เดียว” คำพูดของผู้รับซื้อมะเขือเทศ
+            เพื่อตอกย้ำให้เห็นว่า
+            น้ำทำให้ที่นี่เป็นแหล่งปลูกมะเขือเทศแห่งหนึ่งที่สำคัญของประเทศไทย
+        </div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".tomato", 1, { rotation: 720, ease: Linear.easeNone, scale: .2 });
+
+                let tween2 = TweenMax.to(".tat", 1, { ease: Linear.easeNone, x: "120%" });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".tomato",
+                    duration: 500,
+                    offset: 500,
+                })
+                    .setPin(".tomato", { pushFollowers: true })
+                    .setTween(tween)
+                    .on('enter', () => {
+                        $('.tomato').show();
+                    })
+                    // .addIndicators({ name: "tomato rotate and down" })
+                    .addTo(controller);
+
+                let scene2 = new ScrollMagic.Scene({
+                    triggerElement: ".tomato",
+                    duration: 300,
+                    offset: 1100,
+                })
+                    // .setPin(".tat", { pushFollowers: false })
+                    .setTween(tween2)
+                    .on("start", () => {
+                        $(".tomato").hide();
+                    })
+                    // .addIndicators({ name: "truck amd tomato" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+
+    <section id="page3" class="page">
+        <div class="dropbox"></div>
+        <img class="house1" src="./img/house1.png" alt="house1">
+        <img class="dirt" src="./img/dirt.png" alt="dirt">
+        <img class="truck" alt="truck" src="./img/truck.png">
+        <div id="quote4" class="q-set q-size-nb qoute">
+            “น้ำสะอาด” จากห้วยน้ำ ลำธาร ถือเป็นหัวใจหลักในการทำเกษตรกรรม รวมถึงเป็นน้ำที่ใช้อุปโภค บริโภค
+            ในบางปีที่น้ำฝนไม่เพียงพอ เกษตรกรจำเป็นต้องบรรทุกน้ำใส่รถกระบะ เพื่อใช้ทำการเกษตร
+        </div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".truck", 1, { ease: Linear.easeNone, x: "-350%" });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".tomato",
+                    duration: 650,
+                    offset: 1500, //1400 base on from page 2
+
+                })
+                    // .setPin(".truck", { pushFollowers: false })
+                    .on('enter', () => {
+                        $('.house1').attr('src', './img/house1op.png');
+                    })
+                    .on('leave', () => {
+                        $('.house1').attr('src', './img/house1.png');
+                    })
+                    .setTween(tween)
+                    // .addIndicators({ name: "truck" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+
+    <section id="page4" class="page">
+        <img class="gognam" src="./img/gognum1.png" alt="gognam">
+        <img class="drop" src="./img/drop.png" alt="drop">
+        <div id="quote5" class="q-set q-size-b qoute">
+            จะมีท่อส่งน้ำจากต้นน้ำไปยังบ้านทุกหลัง ให้ทุกคนได้เข้าถึงน้ำสะอาดที่ใช้ในการอุปโภค บริโภค และการเกษตร
+            น้ำสายนี้ที่เย็นชื่นใจชาวบ้านจะเรียกว่า "น้ำประปาภูเขา"
+        </div>
+        <img class="water1" src="./img/water1.png" alt="water1">
+        <img class="dirtlayer" src="./img/dirtlayer.png" alt="dirt layer">
+        <div class="box"></div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".drop", 1, { scale: 1 });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".gognam",
+                    duration: 450,
+                    offset: 300,
+
+                })
+                    .setPin(".drop", { pushFollowers: false })
+                    .setTween(tween)
+                    .on('enter', () => {
+                        $('.gognam').attr("src", "./img/gognam.png")
+                    })
+                    .on('leave', () => {
+                        $('.drop').hide();
+                        $('.drop').css('zIndex', '1');
+                        $('.gognam').attr("src", "./img/gognum1.png")
+                    })
+                    .on('enter', () => {
+                        $('.drop').show();
+                    })
+                    // .addIndicators({ name: "gognam" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+
+    <section id="page5" class="page">
+        <img class="stalactitie1" src="./img/stalactitie1.png" alt="stalactitie1">
+        <img class="stalactite2" src="./img/stalactite2.png" alt="stalactite2">
+        <img class="pickaxe" src="./img/pickaxe.png" alt="pickaxe">
+
+        <div class="paper">
+            <div id="quote6" class="text qoute q-size-nb q-paper">ในปี 2543
+                ได้มีการยื่นคำขอประทานบัตรทำเหมืองถ่านหินจากกรมอุตสาหกรรมพื้นฐานและการเหมืองแร่
+                ระยะเวลาในการยื่นขอทำสัมปทาน 10 ปี หากโครงการเหมืองแห่งนี้เกิดขึ้นจริง
+                อาจส่งผลให้ชุมชนไม่สามารถใช้ทรัพยากรแห่งนี้เพื่อปลูกพืชผลทางการเกษตรรวมถึงใช้อุปโภคบริโภคในชีวิตประจำวันได้อีกต่อไป
+            </div>
+            <img class="submit" src="./img/submit.png" alt="submit">
+        </div>
+        <div style="font-size: 180%;" id="quote7" class="q-set q-size-n font2">
+            นี่ไม่ใช่ปัญหาที่มีแค่ชุมชนในอมก๋อยเผชิญ <br>แต่รวมถึงพืชผลทางการเกษตรที่จะได้รับผลกระทบไปด้วย<br>
+            ผลกระทบเหล่านี้จะมาถึงพวกเราที่อยู่ในส่วนของ<br>ผู้บริโภคในห่วงโซ่ระบบการผลิตอาหาร
+        </div>
+        <img class="rock3" src="./img/rock3.png" alt="rock3">
+
+        <script>
+            $(function () {
+                let images = [
+                    "./img/pickaxe.png",
+                    "./img/pickaxe2.png",
+                    "./img/pickaxe.png",
+                    "./img/pickaxe2.png",
+                    "./img/pickaxe.png",
+                    "./img/pickaxe2.png",
+                ];
+
+                let obj = { curImg: 0 };
+
+                let tween = TweenMax.to(obj, 0.5,
+                    {
+                        curImg: images.length - 1,
+                        roundProps: "curImg",
+                        repeat: 3,
+                        immediateRender: true,
+                        ease: Linear.easeNone,
+                        onUpdate: function () {
+                            $(".pickaxe").attr("src", images[obj.curImg]);
+                        }
+                    }
+                );
+
+                let tween2 = TweenMax.to(".rock3", 1, { ease: Linear.easeNone, rotation: 360 });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".stalactitie1",
+                    duration: 1000,
+                    offset: 300
+                })
+                    .setTween(tween)
+                    // .addIndicators({ name: "pickaxe" })
+                    .addTo(controller);
+
+                let scene2 = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 800,
+                    offset: 50,
+
+                })
+                    .setPin(".rock3", { pushFollowers: true })
+                    .setTween(tween2)
+                    // .addIndicators({ name: "rock" })
+                    .addTo(controller);
+
+                let tween3 = TweenMax.to(".submit", 1, { ease: Linear.easeNone, scale: 1 });
+
+                let scene3 = new ScrollMagic.Scene({
+                    triggerElement: ".paper",
+                    duration: 700,
+                    offset: 250,
+                })
+                    .setTween(tween3)
+                    .on('leave', () => {
+                        $('.submit').hide().delay(500);
+                    })
+                    .on('start', () => {
+                        $('.submit').show().delay(500);
+                    })
+                    // .addIndicators({ name: "paper" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+
+    <section id="page6" class="page">
+        <div class="boxpage6-1-1"></div>
+        <div class="boxpage6-1"></div>
+        <div class="boxpage6-2"></div>
+        <div class="boxpage6-2-1"></div>
+        <div class="boxpage6-2-2"></div>
+        <img class="house2" src="./img/house2.png" alt="house2">
+        <img class="house3" src="./img/house3.png" alt="house3">
+        <img class="man" src="./img/protest1yim.png" alt="man">
+        <img class="woman" src="./img/protest3yim.png" alt="woman">
+        <div id="quote8" class="q-set q-size-o qoute">
+            ผลกระทบจากเหมือง
+        </div>
+        <img class="house2-broken" src="./img/house2broken.png" alt="house2 broken">
+        <img class="house3-broken" src="./img/house3broken.png" alt="house3 broken">
+        <img class="man-unhap" src="./img/protest1.png" alt="man unhap">
+        <img class="woman-unhap" src="./img/protest3.png" alt="woman unhap">
+        <img class="sign1" src="./img/sign1.png" alt="sign1">
+        <img class="sign2" src="./img/sign2.png" alt="sign2">
+        <div style="text-shadow: 1px 1px 0px white, -1px 1px 0px white, 1px -1px 0px white, -1px -1px 0px white;"
+            id="quote9" class="q-set q-size-nb qoute">
+            <li>ทำให้วิถีชีวิตของชาวอมก๋อยเปลี่ยนไป
+            </li>
+            <li>ชาวบ้านคัดค้านไม่ต้องการให้สัมปทานเหมืองถ่านหินแห่งนี้เอาวิถีชีวิต อัตลักษณ์ และทรัพยากรชุมชนของพวกเขาไป
+            </li>
+            <li>ชาวบ้านไม่สามารถใช้น้ำสะอาดตามหลักสิทธิมมุษยชน (สิทธิในการใช้น้ำสะอาด)
+            </li>
+            <li>สิทธิในการได้รับอากาศที่สะอาด
+            </li>
+        </div>
+        <div class="s5"></div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".rock3", 1, { ease: Linear.easeNone, rotation: 720 });
+
+                let images = [
+                    "./img/protest1yim.png",
+                    "./img/poster1ani.png",
+                    "./img/protest1yim.png",
+                    "./img/poster1ani.png",
+                    "./img/protest1yim.png",
+                    "./img/poster1ani.png",
+                ];
+
+                let obj = { curImg: 0 };
+
+                let tween2 = TweenMax.to(obj, 0.5,
+                    {
+                        curImg: images.length - 1,
+                        roundProps: "curImg",
+                        repeat: 3,
+                        immediateRender: true,
+                        ease: Linear.easeNone,
+                        onUpdate: function () {
+                            $(".man").attr("src", images[obj.curImg]);
+                        }
+                    }
+                );
+
+                let images2 = [
+                    "./img/protest3yim.png",
+                    "./img/poster3ani.png",
+                    "./img/protest3yim.png",
+                    "./img/poster3ani.png",
+                    "./img/protest3yim.png",
+                    "./img/poster3ani.png",
+                ];
+
+                let obj2 = { curImg: 0 };
+
+                let tween3 = TweenMax.to(obj2, 0.5,
+                    {
+                        curImg: images2.length - 1,
+                        roundProps: "curImg",
+                        repeat: 3,
+                        immediateRender: true,
+                        ease: Linear.easeNone,
+                        onUpdate: function () {
+                            $(".woman").attr("src", images2[obj2.curImg]);
+                        }
+                    }
+                );
+
+                let images3 = [
+                    "./img/protest1.png",
+                    "./img/protest1_1.png",
+                    "./img/protest1.png",
+                    "./img/protest1_1.png",
+                    "./img/protest1.png",
+                    "./img/protest1_1.png",
+                ];
+
+                let obj3 = { curImg: 0 };
+
+                let tween4 = TweenMax.to(obj3, 0.5,
+                    {
+                        curImg: images3.length - 1,
+                        roundProps: "curImg",
+                        repeat: 3,
+                        immediateRender: true,
+                        ease: Linear.easeNone,
+                        onUpdate: function () {
+                            $(".man-unhap").attr("src", images3[obj3.curImg]);
+                        }
+                    }
+                );
+
+                let images4 = [
+                    "./img/protest3.png",
+                    "./img/protest3_1.png",
+                    "./img/protest3.png",
+                    "./img/protest3_1.png",
+                    "./img/protest3.png",
+                    "./img/protest3_1.png",
+                ];
+
+                let obj4 = { curImg: 0 };
+
+                let tween5 = TweenMax.to(obj4, 0.5,
+                    {
+                        curImg: images4.length - 1,
+                        roundProps: "curImg",
+                        repeat: 3,
+                        immediateRender: true,
+                        ease: Linear.easeNone,
+                        onUpdate: function () {
+                            $(".woman-unhap").attr("src", images4[obj4.curImg]);
+                        }
+                    }
+                );
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 2150,
+                    offset: 850
+                })
+                    .setPin(".rock3", { pushFollowers: false })
+                    .on('enter', () => {
+                        $('.rock3').show();
+
+                    })
+                    .setTween(tween)
+                    // .addIndicators({ name: "rock2" })
+                    .addTo(controller);
+
+                let scene2 = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 500,
+                    offset: 1200
+                })
+                    .setTween(tween2)
+                    .on('enter', () => {
+                        $('.house2').attr('src', './img/house2op.png');
+                        $('.house3').attr('src', './img/house3op.png');
+                    })
+                    .on('leave', () => {
+                        $('.house2').attr('src', './img/house2.png');
+                        $('.house3').attr('src', './img/house3.png');
+                    })
+                    // .addIndicators({ name: "man" })
+                    .addTo(controller);
+
+                let scene3 = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 500,
+                    offset: 1200
+                })
+                    .setTween(tween3)
+                    // .addIndicators({ name: "woman" })
+                    .addTo(controller);
+
+
+                let scene4 = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 500,
+                    offset: 2400
+                })
+                    .setTween(tween4)
+                    .on('enter', () => {
+                        $('.house2-broken').attr('src', './img/house2brokenop.png');
+                        $('.house3-broken').attr('src', './img/house3brokenop.png');
+                    })
+                    .on('leave', () => {
+                        $('.house2-broken').attr('src', './img/house2broken.png');
+                        $('.house3-broken').attr('src', './img/house3broken.png');
+                    })
+                    // .addIndicators({ name: "man un" })
+                    .addTo(controller);
+
+                let scene5 = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 500,
+                    offset: 2400
+                })
+                    .setTween(tween5)
+                    // .addIndicators({ name: "woman un" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+
+    <section id="page7" class="page">
+        <div class="boxpage7"></div>
+        <img class="truck-run truck2" src="./img/truck2.png" alt="truck2">
+        <img class="truck-run truck3" src="./img/truck2andcoal.png" alt="truck and coal">
+        <img class="truck-run truck4" src="./img/truck2andcoal.png" alt="truck and coal2">
+        <div id="quote10" class="q-set q-size-b qoute">
+            ไม่เพียงเท่านั้น เส้นทางการเดินทางของถ่านหินที่จะขนส่งผ่านหลายหมู่บ้านจะเป็นผลกระทบสำคัญทางคมนาคม
+            คงจะไม่ดีแน่หากเส้นทางนี้มีรถบรรทุกถ่านหินขนาดใหญ่มาวิ่งร่วมกันในถนนเส้นทางลาดชันและมีผู้ใช้เส้นทางจำนวนมาก
+        </div>
+        <div class="s3"></div>
+        <script>
+            $(function () {
+                let tween = TweenMax.to(".rock3", 1, { ease: Linear.easeNone, rotation: 1080, scale: 2 });
+
+                let tween2 = TweenMax.to(".truck-run", 1, { ease: Linear.easeNone, x: "-500%" });
+
+                let scene = new ScrollMagic.Scene({
+                    triggerElement: ".rock3",
+                    duration: 550,
+                    offset: 3000,
+
+                })
+                    .setPin(".rock3", { pushFollowers: false })
+                    .setTween(tween)
+                    .on('leave', () => {
+                        $('.rock3').hide();
+                        $(".truck2").attr("src", "./img/truck2andcoal.png")
+                            .css("height", "50vw")
+                            .css("margin-top", "14rem");
+                    })
+                    .on('enter', () => {
+                        $('.rock3').show();
+                        $(".truck2").attr("src", "./img/truck2.png")
+                            .css("height", "41vw")
+                            .css("margin-top", "20rem");
+                    })
+                    // .addIndicators({ name: "rock3" })
+                    .addTo(controller);
+
+                let scene2 = new ScrollMagic.Scene({
+                    triggerElement: ".truck2",
+                    duration: 500,
+                    offset: 200,
+
+                })
+                    .setTween(tween2)
+                    // .addIndicators({ name: "truck run" })
+                    .addTo(controller);
+            });
+        </script>
+    </section>
+    <section id="page8" class="page">
+        <div class="boxend"></div>
+        <div style="font-size: 170%; width: 65%; line-height: 3.5983vw;" id="quote11" class="q-set q-size-n font2">
+            &emsp;การเรียกร้องของชาวอมก๋อย
+            ชาวอมก๋อยกว่า 500 ​คน​ ร่วมประกอบพิธีบวชป่า กิจกรรมทำแนวกันไฟ เพื่อแสดงเจตนารมณ์ว่า
+            “ชาวอมก๋อยไม่ต้องการให้วิถีชีวิตและ<br>อัตลักษณ์จากสิ่งชั่วร้ายมาเอาไปซึ่งผืนดินและทรัพยากรชุมชน
+            และยืนยันว่าจะปกป้อง<br>ทรัพยากรของประเทศต่อไป”
+            ชาวอมก๋อยแสดงจุดยืนในนามของคนอมก๋อยว่า <br>พวกเขาเหล่านี้ไม่ต้องการให้เกิดการขุด “ถ่านหิน”
+            เชื้อเพลิงที่จะส่งผลกระทบ<br>เป็นวงกว้าง “อมก๋อย” ไม่ได้เป็นเพียงแค่เมืองที่อากาศดีเท่านั้น แต่อมก๋อยมี
+            <br>“ที๊งคูเท๊ะฌี (ต้นน้ำดีที่อมก๋อย)”
+            ที่พวกเขาจะต้องปกป้องและรักษาเพื่อไม่ให้เกิดโครงการที่ทำลายวิถีความเป็นอยู่ทุกด้าน
+
+        </div>
+        <div id="parallax" class="parallaxParent">
+            <div style="background-image: url(./img/bg_end.jpg);">
+            </div>
+        </div>
+        <div class="boxend"></div>
+        <div style="font-size: 1.7vw;line-height: 3.2vw; text-shadow: 2px 2px 4px #000000; width: 70%; " id="quote12"
+            class="q-set q-size-n font3 quote12">
+            “การต่อสู้ของชาวอมก๋อยในครั้งนี้ไม่ใช่การต่อสู้เพื่อเรียกร้องสิทธิ์<br>ในการคัดค้านสัมปทานเหมืองถ่านหินเพียงลำพังเท่านั้น
+            แต่เราที่เป็นคนอีกกลุ่มซึ่งได้รับทรัพยากรและผลผลิตจากชาวอมก๋อยทั้งอาหารที่เราบริโภคหรือน้ำจากแหล่งต้นน้ำก็ตาม
+            เราทุกคนต่างได้ร่วมใช้ทรัพยากรธรรมชาติทั้งทางตรงและทางอ้อม”<br><br>
+            <div style="color: rgb(228, 94, 94); text-shadow: 2px 2px 4px #000000; padding: 1%; ">ติดตามข้อมูลข่าวสาร
+                และเรื่องราวการคัดค้านของโครงการเหมืองถ่านหิน<br>
+                ในอมก๋อยของชุมชนกะเบอะดินผ่านกลุ่มเยาวชนปกาเกอะญอ
+                <br> ร่วมสนับสนุนน้องๆได้ในเพจเฟสบุ๊ค
+            </div>
+            <a style="text-decoration: none; color: rgb(70, 58, 163);"
+                href="https://www.facebook.com/KaberdinWonderland/">กะเบอดิน ดินแดนมหัศจรรย์</a>
+
+        </div>
+
+        <button class="button1"
+            onclick="location.href ='https://act.greenpeace.org/page/43726/donate/1?ea.tracking.id=Planet4&utm_campaign=General&utm_source=Planet4&utm_medium=Planet4&utm_content=HeaderButton&utm_term=Visitor&_ga=2.28011708.1219268396.1622037850-733614903.1621846064'">ร่วมบริจาค</button>
+        </div>
+        <script>
+            $(function () {
+                let controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
+
+                new ScrollMagic.Scene({ triggerElement: "#parallax" })
+                    .setTween("#parallax > div", { y: "80%", ease: Linear.easeNone })
+                    // .addIndicators()
+                    .addTo(controller);
+
+            });
+        </script>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
