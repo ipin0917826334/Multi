@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Basic of VueJS</title>
+    <style>
+        body{
+	font-family: 'Lato', sans-serif;
+}
+
+.anim-text-banner{
+	font-size: 8vw;
+	font-weight: bold;
+	white-space: nowrap;
+	
+	padding: 100px 50px;
+	text-transform: uppercase;
+	font-weight: 400;
+	>span{
+		position: absolute;
+		display: inline-block;
+		clip: rect(0px, 0px, 300px, 0px);
+		color: #575757;
+	}
+}
+
+.anim-text-parent{
+	position: relative;
+	color: #ff9933;
+	>.v-bar{
+		position: absolute;
+		width: 0px;
+		height: 1vw;
+		background: #ff9933;
+		display: inline-block;
+		top: 0px;
+		left: -20px;
+		transform: translate(-100%,450%);
+	}
+	>.anim-text{
+		overflow: hidden;
+		white-space: nowrap;
+		top: 0;
+		left: 0;
+		position: absolute;
+		transition: width 1s ease;
+		clip: rect(0px, 0px, 300px, 0px);
+	}
+}
+    </style>
+</head>
+
+<body>
+        <div class="wrapper">
+            <p>เ</p>
+            <p>ร</p>
+            <p>า</p>
+            <p>ข</p>
+            <p>อ</p>
+            <p>เ</p>
+            <p>ป็</p>
+            <p>น</p>
+            <p>แ</p>
+            <p>ฟ</p>
+            <p>น</p>
+            <p>เ</p>
+            <p>ท</p>
+            <p>อ</p>
+            <p>ไ</p>
+            <p>ด้</p>
+            <p>มั้</p>
+            <p>ย</p>
+
+          </div>
+</body>
